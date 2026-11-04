@@ -1,0 +1,29 @@
+import { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import { FiArrowLeft, FiArrowUpRight, FiCheck, FiClock, FiCopy, FiMapPin, FiNavigation, FiShare2 } from 'react-icons/fi'
+import { stores, distanceKm, formatDistance, directionsUrl } from '../data/stores'
+import { products } from '../data/catalogue'
+import { useLocationState } from '../context/useLocation'
+import ProductCard from '../components/ProductCard'
+import LocationBanner from '../components/LocationBanner'
+import StoreCard from '../components/StoreCard'
+export default function StoreDetail() {
+  const { slug } = useParams()
+  const store = stores.find(item => item.slug === slug)
+  const { coordinates } = useLocationState()
+  const [shareStatus, setShareStatus] = useState('')
+  const [copyFallback, setCopyFallback] = useState(false)
+  const [category, setCategory] = useState('All')
+  if (!store) return <section className="container section empty-state"><h1>Store not found.</h1><p>This store link may have changed.</p><Link className="button" to="/explore-shops">Browse all stores <FiArrowUpRight /></Link></section>
+  const url = `${window.location.origin}/shop/${store.slug}`
+  const distance = coordinates ? distanceKm(coordinates, store) : undefined
+  const collection = products.filter(product => store.productIds.includes(product.id) && (category === 'All' || category === product.category))
+  async function copyLink() {
+    try { await navigator.clipboard.writeText(url); setShareStatus('Store link copied. Ready to share.'); setCopyFallback(false) } catch { setCopyFallback(true); setShareStatus('Copy the store link below to share it.') }
+  }
+  async function share() {
+    if (navigator.share) { try { await navigator.share({ title: store!.name, text: `Explore ${store!.name} on SonaSetu`, url }); setShareStatus('Share dialog opened.') } catch (error) { if (!(error instanceof DOMException && error.name === 'AbortError')) await copyLink() } }
+    else await copyLink()
+  }
+  return <><section className="store-cover"><img src={store.image} alt={`${store.name} collection inspiration`} /><div className="container"><Link className="cover-back" to="/explore-shops"><FiArrowLeft /> All jewellers</Link><span className="demo-badge">DEMO STORE · KOLKATA</span></div></section><section className="container store-profile"><div className="store-profile-heading"><div className="store-profile-title"><span className="store-monogram large">{store.initials}</span><div><div className="eyebrow">{store.area} · KOLKATA</div><h1>{store.name}</h1><p>{store.specialty} · A little something to treasure.</p></div></div><div className="share-actions"><button className="button small" onClick={share}><FiShare2 /> Share store</button><button className="copy-store-link" onClick={copyLink}><FiCopy /> Copy link</button></div></div><div className="share-feedback" role="status">{shareStatus}</div>{copyFallback && <input className="share-url" aria-label="Store share URL" readOnly value={url} onFocus={event => event.target.select()} />}<LocationBanner /><div className="store-layout"><div><div className="profile-about"><div className="eyebrow">A CONNECTION WORTH MAKING</div><h2>Welcome to <em>{store.name}.</em></h2><p>{store.description}</p><div className="store-tags">{store.categories.map(value => <span key={value}>{value}</span>)}</div></div><div className="store-collection"><div className="section-heading"><div><div className="eyebrow">A GLIMPSE OF WHAT YOU COULD FIND</div><h2>The <em>collection.</em></h2></div><span className="sample-label">Sample designs</span></div><div className="category-tabs">{['All', ...store.categories].map(value => <button className={category === value ? 'active' : ''} key={value} onClick={() => setCategory(value)}>{value}</button>)}</div><div className="detail-product-grid">{collection.map(product => <ProductCard key={product.id} product={product} />)}</div></div></div><aside className="visit-card"><span className="eyebrow">COME A LITTLE CLOSER</span><h2>Plan your <em>visit.</em></h2><div className="visit-info"><FiMapPin /><div><strong>Find us here</strong><p>{store.address}</p></div></div><div className="visit-info"><FiNavigation /><div><strong>{distance === undefined ? 'How far away are we?' : `Approx. ${formatDistance(distance)} from you`}</strong><p>{distance === undefined ? 'Enable your current location above to see the distance.' : 'Straight-line estimate from an approximate store pin.'}</p></div></div><div className="visit-info"><FiClock /><div><strong>Sample visiting hours</strong><p>Monday–Saturday · 10:30 AM–8:00 PM<br />Sunday · 11:00 AM–6:00 PM<br />Confirm hours before visiting.</p></div></div><a className="button" target="_blank" rel="noopener noreferrer" href={directionsUrl(store, coordinates)}><FiNavigation /> Get directions <FiArrowUpRight /></a><a className="text-link" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.address)}`} target="_blank" rel="noopener noreferrer">View address on Google Maps <FiArrowUpRight /></a><p className="visit-demo"><FiCheck /> Fictional profile for demonstration. Address supplied by you; store pin, photos, prices, and hours are illustrative.</p><div className="owner-share"><FiShare2 /><strong>Your store. One simple link.</strong><p>Owners can share this page with customers using the Share store or Copy link buttons above.</p></div></aside></div><section className="more-stores"><div className="section-heading"><h2>A few more <em>connections.</em></h2><Link to="/explore-shops" className="text-link">All stores <FiArrowUpRight /></Link></div><div className="store-grid">{stores.filter(item => item.slug !== store.slug).slice(0, 3).map(item => <StoreCard store={item} key={item.slug} distance={coordinates ? distanceKm(coordinates, item) : undefined} />)}</div></section></section></>
+}
