@@ -1,3 +1,4 @@
+import HeadingShine from './HeadingShine'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
@@ -67,7 +68,7 @@ export function CoverFlowCarousel({ items, sectionLabel = 'THE SONASATHI EDIT', 
     onTouchEnd={event => { const end = event.changedTouches[0]?.clientX; if (touchStart.current !== null && end !== undefined && Math.abs(end - touchStart.current) > 45) { if (end < touchStart.current) next(); else previous() } touchStart.current = null }}>
     <div className="coverflow-ambience" aria-hidden="true"><img src={items[index].img} alt="" loading="lazy" /></div>
     <div className="coverflow-inner">
-      <div className="coverflow-heading"><div className="eyebrow">{sectionLabel}</div><h2>A little gold. <em>A lot to love.</em></h2><p>Beautiful details, meaningful moments. Find a piece that feels like you.</p></div>
+      <div className="coverflow-heading"><div className="eyebrow">{sectionLabel}</div><h2><HeadingShine>A little gold. <em>A lot to love.</em></HeadingShine></h2><p>Beautiful details, meaningful moments. Find a piece that feels like you.</p></div>
       <div className="coverflow-stage">
         {items.map((item, slideIndex) => {
           let offset = (slideIndex - index + total) % total

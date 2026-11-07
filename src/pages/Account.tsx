@@ -1,4 +1,5 @@
-﻿import { useState } from 'react'
+import HeadingShine from '../components/ui/HeadingShine'
+import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { FiArrowUpRight, FiChevronDown, FiEye, FiEyeOff, FiHeart, FiUser } from 'react-icons/fi'
@@ -32,7 +33,7 @@ export default function Account() {
     <div className="account-panels account-layout">
       <section className="shopping-panel account-form-panel" aria-labelledby="account-form-title">
         <div className="account-form-heading"><span className="account-user-icon"><FiUser aria-hidden="true" /></span><div className="account-mode"><label htmlFor="account-mode">Get started</label><div><select id="account-mode" value={mode} onChange={event => { setMode(event.target.value); setShowPassword(false); setMessage('') }}><option value="login">Login</option><option value="register">Register</option></select><FiChevronDown aria-hidden="true" /></div></div></div>
-        <h2 id="account-form-title">{register ? 'Begin a beautiful connection.' : 'Lovely to see you again.'}</h2>
+        <h2 id="account-form-title"><HeadingShine>{register ? 'Begin a beautiful connection.' : 'Lovely to see you again.'}</HeadingShine></h2>
         <p>{register ? 'Create an account to start your jewellery journey.' : 'Enter your details to continue your jewellery journey.'}</p>
         <form key={mode} className="account-form" onSubmit={submit} onChange={() => setMessage('')}>
           {register && <label htmlFor="account-name">Full name<input id="account-name" name="name" autoComplete="name" placeholder="Your full name" required maxLength={100} /></label>}
@@ -45,7 +46,7 @@ export default function Account() {
         </form>
         <div className="account-switch">{register ? 'Already have an account?' : 'New to SonaSathi?'} <button type="button" onClick={() => { setMode(register ? 'login' : 'register'); setMessage(''); setShowPassword(false) }}>{register ? 'Login' : 'Register'}</button></div>
       </section>
-      <aside className="shopping-panel account-saved"><FiHeart aria-hidden="true" /><div className="eyebrow">KEEP A LITTLE INSPIRATION</div><h2>Your favourites, all together.</h2><p>{wishlist.length ? `${wishlist.length} favourite ${wishlist.length === 1 ? 'design is' : 'designs are'} waiting for another look.` : 'Save the pieces that catch your eye. Find them here whenever you are ready to take a closer look.'}</p><Link className="button" to="/jewellery?saved=true">View saved designs ({wishlist.length})<FiArrowUpRight aria-hidden="true" /></Link><p className="account-saved-note">Your saved designs are available on this browser, even without an account.</p></aside>
+      <aside className="shopping-panel account-saved"><FiHeart aria-hidden="true" /><div className="eyebrow">KEEP A LITTLE INSPIRATION</div><h2><HeadingShine>Your favourites, all together.</HeadingShine></h2><p>{wishlist.length ? `${wishlist.length} favourite ${wishlist.length === 1 ? 'design is' : 'designs are'} waiting for another look.` : 'Save the pieces that catch your eye. Find them here whenever you are ready to take a closer look.'}</p><Link className="button" to="/jewellery?saved=true">View saved designs ({wishlist.length})<FiArrowUpRight aria-hidden="true" /></Link><p className="account-saved-note">Your saved designs are available on this browser, even without an account.</p></aside>
     </div>
   </ShoppingPage>
 }
