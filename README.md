@@ -1,4 +1,4 @@
-﻿# SonaSetu frontend
+﻿# SonaSathi frontend
 
 React, TypeScript, Vite, React Router, Context API, and React Icons.
 
