@@ -21,7 +21,7 @@ export default function HomeJewellerCard({ store, distance }: { store: Store; di
       <StoreRating slug={store.slug} />
       <p className="home-jeweller-description">{store.description}</p>
       <div className="home-jeweller-tags" aria-label="Collections">{store.categories.slice(0, 2).map(category => <span key={category}>{category}</span>)}{store.categories.length > 2 && <Link to={`/shop/${store.slug}`} aria-label={`Explore all ${store.categories.length} collections`}>+{store.categories.length - 2} collections</Link>}</div>
-      {distance !== undefined && <div className="home-jeweller-distance"><FiNavigation aria-hidden="true" />Approx. {formatDistance(distance)} away<span> · straight-line estimate</span></div>}
+      {distance !== undefined && <div className="home-jeweller-distance"><FiNavigation aria-hidden="true" />Approx. {formatDistance(distance)} away</div>}
       <div className="home-jeweller-actions"><Link className="button" to={`/shop/${store.slug}`}>Explore store<FiArrowUpRight aria-hidden="true" /></Link><a className="home-jeweller-directions" href={directionsUrl(store, coordinates)} target="_blank" rel="noopener noreferrer"><FiNavigation aria-hidden="true" />Directions</a></div>
     </div>
   </article>

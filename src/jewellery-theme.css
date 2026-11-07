@@ -67,6 +67,16 @@ body { @apply bg-ivory; }
 :root .header-shortcuts { border-color: #ffffff26; }
 
 :root .header .brand { @apply shrink-0; }
+:root .header .brand--logo {
+  @apply block w-[220px] max-w-full min-w-0 overflow-hidden;
+  /* Crop the tagline while keeping the original wordmark and gold flourish. */
+  aspect-ratio: 2172 / 570;
+}
+:root .header .brand--logo img {
+  @apply block w-full h-auto object-contain;
+  /* Black becomes invisible against the teal header without altering the artwork. */
+  mix-blend-mode: screen;
+}
 :root .header .navigation a { @apply whitespace-nowrap leading-5; }
 :root .header .header-actions { @apply shrink-0; }
 :root .header .location select { @apply min-h-10; }
@@ -100,6 +110,7 @@ body { @apply bg-ivory; }
 @media (max-width: 800px) {
   :root .header { @apply grid grid-cols-[minmax(0,1fr)_auto_auto_auto] h-auto min-h-0 px-4 py-4 gap-x-2 gap-y-3; }
   :root .header .header-actions { @apply contents; }
+  :root .header .brand--logo { @apply w-[156px] max-w-full; }
   :root .navigation.open { @apply bg-brand top-full z-30 m-0; left: 0; right: 0; }
   :root .header .brand > span { @apply text-[27px]; }
   :root .header .brand > svg { @apply text-[28px]; }
