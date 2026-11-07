@@ -1,0 +1,59 @@
+@reference './tailwind.css';
+
+/* Load after the theme so compact layouts retain their intended dimensions. */
+@media (max-width: 1024px) {
+  :root .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+  :root .hero h1 { font-size: clamp(38px, 5.8vw, 58px); }
+  :root .hero-copy, :root .hero-visual, :root .listing-layout > * { min-width: 0; }
+  :root .hero-buttons { flex-wrap: wrap; gap: 16px; }
+  :root .hero-complete-caption { flex-wrap: wrap; }
+  :root .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  :root .listing-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  :root .listing-toolbar, :root .shop-results-toolbar { flex-wrap: wrap; gap: 16px; }
+}
+
+@media (max-width: 800px) {
+  /* Keep utilities on their own row, and reserve room for all header controls. */
+  :root .header { grid-template-columns: minmax(0, 1fr) auto auto auto; }
+  :root .header .brand--logo { width: clamp(112px, 22vw, 156px); }
+  :root .header .location { margin-left: 0; min-width: 0; }
+  :root .header .icon-button { min-width: 44px; min-height: 44px; padding: 10px; }
+  :root .header .mobile-menu { grid-column: 4; grid-row: 1; }
+  :root .header-shortcuts { grid-column: 1 / -1; grid-row: 2; }
+  :root .navigation.open { padding: 16px; gap: 4px; }
+  :root .navigation.open a { display: flex; align-items: center; min-height: 44px; padding: 8px; }
+  :root .category-navigation-scroll { min-width: 0; overscroll-behavior-x: contain; }
+  :root .category-navigation nav a { min-height: 56px; }
+  :root .home-category-links { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 8px; }
+  :root .home-category-links > a { flex-shrink: 0; white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+}
+
+@media (max-width: 640px) {
+  :root .hero { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 32px; }
+  :root .hero-copy { text-align: center; }
+  :root .hero .eyebrow, :root .hero-social { justify-content: center; }
+  :root .hero h1 { font-size: clamp(40px, 10vw, 58px); letter-spacing: -1.4px; }
+  :root .hero-buttons { flex-direction: column; align-items: center; justify-content: center; }
+  :root .hero-visual { width: 100%; margin-left: 0; }
+  :root .hero-complete-caption { text-align: left; }
+  :root .product-grid, :root .listing-product-grid { gap: 24px 12px; }
+  :root .product-info h3 { font-size: 21px; line-height: 1.25; }
+  :root .section-heading { display: block; }
+  :root .section-heading > .text-link { margin-top: 16px; min-height: 44px; }
+  :root .booking-modal .form-row { flex-direction: column; gap: 0; }
+  /* 16px prevents mobile browsers from zooming when a text field is focused. */
+  :root input:not([type='radio']):not([type='checkbox']),
+  :root textarea { font-size: 16px; }
+  :root .shopping-panel { padding: 24px 18px; }
+}
+
+@media (max-width: 380px) {
+  :root .header { padding-inline: 12px; column-gap: 2px; }
+  :root .header .brand--logo { width: 100px; }
+  :root .header .sona-select--header { min-width: 76px; max-width: 80px; }
+  :root .header .location > svg { display: none; }
+  :root .header-shortcuts { gap: 4px; }
+  :root .header-shortcut { white-space: normal; font-size: 10px; }
+  :root .product-grid, :root .listing-product-grid { grid-template-columns: minmax(0, 1fr); }
+  :root .hero-complete-caption > span { font-size: 22px; }
+}

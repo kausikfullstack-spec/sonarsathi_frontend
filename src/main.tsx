@@ -5,6 +5,7 @@ import App from './App.tsx'
 import './typography.css'
 import './tailwind.css'
 import './jewellery-theme.css'
+import './responsive.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
