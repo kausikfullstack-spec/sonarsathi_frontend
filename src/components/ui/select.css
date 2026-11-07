@@ -1,0 +1,46 @@
+@reference '../../tailwind.css';
+
+:root .sona-select { @apply relative inline-block min-w-0 w-full align-middle; }
+:root .sona-select .sona-select-trigger { @apply flex items-center justify-between gap-3 w-full min-w-0 min-h-11 rounded-lg py-3 px-3.5 text-xs text-brand font-medium text-left bg-ivory; border: 1px solid #d6c4a3; transition: border-color .2s, box-shadow .2s, background .2s; }
+.sona-select-trigger > span { @apply min-w-0 truncate; }
+:root .sona-select .sona-select-trigger > svg { @apply size-[15px] shrink-0 text-accent; transition: transform .2s; }
+.sona-select-trigger > svg.is-open { transform: rotate(180deg); }
+:root .sona-select .sona-select-trigger:hover:not(:disabled) { background: #fff5dc; border-color: #ae8e57; }
+:root .sona-select .sona-select-trigger[aria-expanded='true'] { border-color: #174c43; box-shadow: 0 0 0 3px #174c4315; }
+:root .sona-select .sona-select-trigger:focus-visible { outline: 2px solid #b79a6b; outline-offset: 3px; }
+:root .sona-select .sona-select-trigger:disabled { @apply opacity-50 cursor-not-allowed; }
+:root .sona-select .sona-select-native { position: absolute; width: 1px; height: 1px; min-width: 0; min-height: 0; max-width: 1px; padding: 0; margin: -1px; border: 0; overflow: hidden; clip-path: inset(50%); opacity: 0; pointer-events: none; }
+:root .sona-select .sona-select-placeholder { color: #81776a; }
+:root .sona-select .sona-select-trigger[aria-invalid='true'] { border-color: #a24b32; }
+.sona-select-error { @apply block mt-2 text-[11px] leading-5; color: #963f2a; }
+:root .sona-select-menu { @apply fixed z-[1000] rounded-xl p-1.5 overflow-y-auto font-body; color: #174c43; background: #fffdf8; border: 1px solid #d6c4a3; box-shadow: 0 16px 42px #173c3326, 0 3px 10px #765a3d0d; overscroll-behavior: contain; scrollbar-width: thin; }
+:root .sona-select-menu .sona-select-option { @apply flex items-center justify-between gap-4 rounded-lg px-3 py-3 min-h-11 text-xs leading-5 font-medium cursor-pointer; color: #174c43; }
+.sona-select-option > span { @apply min-w-0; overflow-wrap: anywhere; }
+:root .sona-select-menu .sona-select-option > svg { @apply size-4 shrink-0; color: #174c43; }
+:root .sona-select-menu .sona-select-option.is-highlighted { background: #f4ead6; }
+:root .sona-select-menu .sona-select-option[aria-selected='true'] { background: #174c43; color: #fff; }
+:root .sona-select-menu .sona-select-option[aria-selected='true'] > svg { color: #e3c896; }
+:root .sona-select-menu .sona-select-option[aria-disabled='true'] { opacity: .45; cursor: not-allowed; background: transparent; }
+:root .header .sona-select--header { width: auto; min-width: 102px; max-width: 150px; }
+:root .header .sona-select--header .sona-select-trigger { @apply text-white min-h-11 py-2 px-2 text-[11px]; border-color: #e3c89650; background: #ffffff08; }
+:root .header .sona-select--header .sona-select-trigger > svg { color: #e3c896; }
+:root .header .sona-select--header .sona-select-trigger:hover,
+:root .header .sona-select--header .sona-select-trigger[aria-expanded='true'] { background: #ffffff12; border-color: #e3c896; }
+:root .shop-results-toolbar .sona-select { @apply min-w-[145px] max-w-[180px]; }
+:root .listing-sort .sona-select { @apply min-w-[150px] max-w-[190px]; }
+:root .booking-modal .sona-select-menu { z-index: 1100; }
+:root .category-navigation .category-dropdown { @apply p-1.5 rounded-xl bg-[#fffdf8]; border-color: #d6c4a3; box-shadow: 0 16px 42px #173c3326; }
+:root .category-navigation .category-dropdown a { @apply text-brand text-xs font-medium rounded-lg px-3 py-3 min-h-11; }
+:root .category-navigation .category-dropdown a:hover { @apply text-brand; background: #f4ead6; }
+:root .category-navigation .category-dropdown a.active { @apply bg-brand text-white; }
+:root .category-navigation .category-dropdown a > svg { @apply text-accent; }
+:root .category-navigation .category-dropdown a.active > svg { color: #e3c896; }
+@media (max-width: 800px) {
+  :root .header .sona-select--header { min-width: 88px; max-width: 118px; }
+  :root .header .sona-select--header .sona-select-trigger { @apply text-[10px] px-1.5 gap-1.5; }
+}
+@media (max-width: 540px) {
+  :root .shop-results-toolbar .sona-select { @apply min-w-[125px] max-w-[160px]; }
+  :root .listing-sort .sona-select { @apply min-w-[125px] max-w-[150px]; }
+  :root .sona-select .sona-select-trigger { @apply text-[11px] px-3; }
+}

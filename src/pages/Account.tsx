@@ -1,8 +1,9 @@
+import Select from '../components/ui/Select'
 import HeadingShine from '../components/ui/HeadingShine'
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link } from 'react-router-dom'
-import { FiArrowUpRight, FiChevronDown, FiEye, FiEyeOff, FiHeart, FiUser } from 'react-icons/fi'
+import { FiArrowUpRight, FiEye, FiEyeOff, FiHeart, FiUser } from 'react-icons/fi'
 import { useShop } from '../context/useShop'
 import ShoppingPage from './ShoppingPage'
 import './account.css'
@@ -32,7 +33,7 @@ export default function Account() {
   return <ShoppingPage eyebrow="YOUR LITTLE CORNER" title="My account" description="A little closer to the designs you love. Log in or create your SonaSathi account.">
     <div className="account-panels account-layout">
       <section className="shopping-panel account-form-panel" aria-labelledby="account-form-title">
-        <div className="account-form-heading"><span className="account-user-icon"><FiUser aria-hidden="true" /></span><div className="account-mode"><label htmlFor="account-mode">Get started</label><div><select id="account-mode" value={mode} onChange={event => { setMode(event.target.value); setShowPassword(false); setMessage('') }}><option value="login">Login</option><option value="register">Register</option></select><FiChevronDown aria-hidden="true" /></div></div></div>
+        <div className="account-form-heading"><span className="account-user-icon"><FiUser aria-hidden="true" /></span><div className="account-mode"><label htmlFor="account-mode">Get started</label><div><Select id="account-mode" value={mode} onChange={event => { setMode(event.target.value); setShowPassword(false); setMessage('') }}><option value="login">Login</option><option value="register">Register</option></Select></div></div></div>
         <h2 id="account-form-title"><HeadingShine>{register ? 'Begin a beautiful connection.' : 'Lovely to see you again.'}</HeadingShine></h2>
         <p>{register ? 'Create an account to start your jewellery journey.' : 'Enter your details to continue your jewellery journey.'}</p>
         <form key={mode} className="account-form" onSubmit={submit} onChange={() => setMessage('')}>

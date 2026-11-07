@@ -1,0 +1,60 @@
+@reference '../tailwind.css';
+
+.auth-main { @apply min-h-dvh; }
+.auth-page { @apply grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)] min-h-dvh bg-ivory; }
+.auth-visual { @apply sticky top-0 h-dvh overflow-hidden isolate; background: #173c33; }
+.auth-visual-photo { @apply absolute inset-0 size-full object-cover; object-position: 55% center; }
+.auth-visual-shade { @apply absolute inset-0; background: linear-gradient(180deg,#0b2a2480,transparent 35%,#0b2a24df); }
+.auth-visual .brand--logo { @apply absolute top-10 left-10 block w-[250px] max-w-[65%] overflow-hidden; aspect-ratio: 2172 / 570; }
+.auth-visual .brand--logo img { @apply block w-full h-auto; mix-blend-mode: screen; }
+.auth-visual-copy { @apply absolute bottom-12 left-10 right-10 text-white; }
+.auth-visual-copy > span { @apply text-[10px] tracking-[2px] font-medium; color: #e3c896; }
+:root .auth-visual-copy h2 { @apply font-display text-[clamp(38px,4.2vw,64px)] leading-[1.05] font-medium text-white tracking-[-1px] mt-5 mb-5; }
+.auth-visual-copy h2 em { color: #e3c896; }
+:root body main .auth-visual-copy p { @apply text-sm leading-7 text-white font-normal m-0; }
+.auth-form-side { @apply relative flex flex-col min-w-0 px-10 py-8; }
+.auth-back { @apply inline-flex items-center gap-2 text-xs text-body font-medium self-start mb-8 min-h-8; }
+.auth-back:hover { @apply text-brand; }
+.auth-form-content { @apply w-full max-w-[420px] mx-auto my-auto py-5; }
+.auth-tabs { @apply flex gap-8 mb-10; border-bottom: 1px solid #e5d8bd; }
+.auth-tabs > a { @apply text-sm font-medium text-body pb-3 px-1; border-bottom: 2px solid transparent; }
+.auth-tabs > a[aria-current='page'] { @apply text-brand font-semibold; border-color: #174c43; }
+.auth-form-content > .eyebrow { @apply text-[9px]; }
+:root .auth-form-content h1 { @apply text-[clamp(38px,3.5vw,50px)] leading-[1.1] font-semibold tracking-[-1px] mt-4 mb-4; }
+:root body main .auth-form-content .auth-intro { @apply text-sm leading-7 mb-7 mt-0 font-normal; }
+.auth-form { @apply flex flex-col gap-5; }
+.auth-form > label { @apply flex flex-col gap-2 text-xs font-medium text-brand; }
+.auth-form input { @apply w-full min-w-0 rounded-lg px-4 py-3.5 text-sm font-normal text-brand bg-transparent min-h-12; border: 1px solid #d8cbb2; }
+.auth-form input::placeholder { color: #81796d; }
+.auth-form input:focus { border-color: #174c43; }
+.auth-password { @apply relative block; }
+.auth-password input { @apply pr-14; }
+.auth-password > button { @apply absolute right-1 top-1 bottom-1 w-11 inline-flex items-center justify-center rounded-md bg-transparent text-body text-lg; }
+.auth-password > button:hover { background: #f3ebda; }
+.auth-submit { @apply inline-flex items-center justify-between gap-5 bg-brand text-white text-sm font-semibold py-4 px-5 rounded-lg min-h-12 mt-1; }
+.auth-submit:hover { background: #103e36; }
+.auth-submit > svg { @apply size-5; color: #e3c896; }
+.auth-status { @apply text-xs leading-6 text-brand; }
+.auth-status:empty { @apply hidden; }
+.auth-switch { @apply text-xs leading-6 text-center text-body mt-7; }
+.auth-switch > a { @apply text-brand font-semibold underline; text-underline-offset: 4px; }
+:root body main .auth-form-content .auth-preview { @apply text-[11px] leading-5 text-body text-center mt-5 mb-0; }
+@media (max-width: 900px) {
+  .auth-form-side { @apply px-7; }
+  .auth-visual .brand--logo { @apply left-7 top-7 w-[220px]; }
+  .auth-visual-copy { @apply left-7 right-7; }
+}
+@media (max-width: 640px) {
+  .auth-page { @apply grid-cols-1; }
+  .auth-visual { @apply relative h-[260px]; }
+  .auth-visual-photo { object-position: center 42%; }
+  .auth-visual .brand--logo { @apply top-5 left-6 w-[180px]; }
+  .auth-visual-copy { @apply bottom-5 left-6 right-6; }
+  .auth-visual-copy > span { @apply text-[8px]; }
+  :root .auth-visual-copy h2 { @apply text-[34px] mt-3 mb-0; }
+  :root body main .auth-visual-copy p { @apply hidden; }
+  .auth-form-side { @apply px-6 py-5; }
+  .auth-back { @apply mb-3; }
+  .auth-form-content { @apply py-3; }
+  .auth-tabs { @apply mb-7; }
+}

@@ -1,0 +1,36 @@
+@reference '../tailwind.css';
+
+:root .product-gallery .gallery-image-frame { @apply overflow-hidden rounded-xl; background: #fafafa; border: 1px solid #e5d8bd; }
+.product-magnifier { @apply relative w-full h-full overflow-hidden; }
+:root .product-gallery .gallery-selected-image { @apply block size-full object-contain; transform-origin: center; }
+.product-magnifier.is-magnifying { cursor: crosshair; }
+.product-magnifier-lens { @apply absolute z-10 rounded-full pointer-events-none; display: none; background-repeat: no-repeat; background-color: #fafafa; border: 2px solid #b79a6b; box-shadow: 0 0 0 4px #fffdf8cc, 0 8px 24px #174c4330; }
+.is-magnifying > .product-magnifier-lens { @apply block; }
+.gallery-image-frame .zoom-design { @apply z-20; }
+.gallery-view-counter { @apply absolute left-4 bottom-4 rounded-full px-3 py-1.5 text-[11px] font-medium text-brand; background: #fffaf0ed; border: 1px solid #e5d8bd; }
+.gallery-thumbnail-row { @apply grid grid-cols-3 gap-3 mt-4; }
+.gallery-thumbnail { @apply min-w-0 p-1.5 rounded-lg bg-transparent; border: 1px solid #ddcfb6; transition: border-color .2s, background-color .2s; }
+.gallery-thumbnail:hover { background: #fff5dc; border-color: #b79a6b; }
+.gallery-thumbnail.is-selected { background: #fff5dc; border: 2px solid #174c43; padding: 5px; }
+.gallery-thumbnail-image { @apply block aspect-square overflow-hidden rounded-md; background: #fafafa; }
+.gallery-thumbnail-image img { @apply block size-full object-contain; }
+.gallery-thumbnail > span:last-child { @apply block px-1 pt-2 pb-1 text-[10px] text-brand font-medium leading-5; }
+.gallery-selection-status { @apply text-[11px] text-accent leading-5 mt-3; }
+:root body main .product-gallery .gallery-help { @apply flex items-start gap-2 text-xs leading-6 mt-2 mb-0; }
+.gallery-help > svg { @apply size-[15px] shrink-0 mt-1 text-accent; }
+:root .product-gallery .jewellery-gallery-note { @apply text-[11px] gap-y-2; }
+:root .gallery-dialog { @apply overflow-auto; padding: 44px 20px 16px; }
+.gallery-dialog-stage { @apply w-full overflow-hidden; height: min(70dvh, 700px); background: #fafafa; }
+.gallery-dialog-stage img { @apply block size-full object-contain; }
+.gallery-dialog-controls { @apply flex items-center justify-center gap-5 mt-4; }
+.gallery-dialog-controls > button { @apply inline-flex items-center justify-center size-11 rounded-full text-brand bg-cream; border: 1px solid #ddcfb6; }
+.gallery-dialog-controls > span { @apply text-xs text-body text-center; }
+@media (hover: none), (pointer: coarse) {
+  .gallery-hover-instruction { @apply hidden; }
+}
+@media (max-width: 540px) {
+  .gallery-thumbnail-row { @apply gap-2; }
+  .gallery-thumbnail > span:last-child { @apply text-[9px] px-0; }
+  :root .product-gallery .jewellery-gallery-note { @apply text-[10px]; }
+  .gallery-dialog-controls { @apply gap-3; }
+}

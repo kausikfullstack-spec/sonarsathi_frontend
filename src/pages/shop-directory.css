@@ -1,0 +1,84 @@
+@reference '../tailwind.css';
+
+.shop-directory-top { @apply flex items-center gap-4 mb-7; }
+.shop-directory-search { @apply flex items-center gap-3 w-full rounded-xl px-4 py-2; border: 1px solid #d8c8aa; background: #fffdf8; }
+.shop-directory-search > svg { @apply size-[18px] text-accent shrink-0; }
+.shop-directory-search input { @apply flex-1 min-w-0 text-sm min-h-10 text-brand bg-transparent border-0; }
+.shop-directory-search:focus-within { box-shadow: 0 0 0 3px #174c4318; border-color: #174c43; }
+.shop-directory-search input:focus-visible { outline: none; }
+.shop-directory-search > button { @apply inline-flex items-center justify-center size-10 bg-transparent text-body shrink-0; }
+.shop-directory-layout { @apply grid grid-cols-[270px_minmax(0,1fr)] items-start gap-7; }
+.shop-filter-sidebar { @apply sticky top-5 min-w-0 rounded-xl p-5; max-height: calc(100dvh - 40px); overflow-y: auto; border: 1px solid #e0d2b8; background: #fffdf8; scrollbar-width: thin; }
+.shop-filter-heading { @apply flex items-center justify-between gap-3 pb-5; border-bottom: 1px solid #e5d8bd; }
+.shop-filter-heading > strong { @apply inline-flex items-center gap-2 text-xs font-semibold text-brand; }
+.shop-filter-heading > strong svg { @apply size-4 text-accent; }
+.shop-filter-heading > button { @apply bg-transparent text-[11px] text-accent font-medium p-0 min-h-8; }
+.shop-location-filter { @apply p-3.5 mt-5 rounded-lg bg-cream; border: 1px solid #e5d8bd; }
+.shop-filter-caption { @apply flex items-center gap-2 text-[9px] tracking-wider font-semibold text-accent mb-3; }
+.shop-location-filter > strong { @apply block text-sm font-semibold text-brand leading-6; }
+.shop-location-filter > .shop-location-title { @apply flex items-center gap-2 mb-3 text-xs; }
+.shop-location-title > svg { @apply text-accent size-3.5 shrink-0; }
+:root body main .shop-location-filter p { @apply text-xs leading-6 mt-2 mb-4; }
+.shop-locate-button { @apply inline-flex items-center justify-center w-full gap-2 bg-brand text-white rounded-lg px-3 py-3 text-[11px] font-semibold min-h-11; }
+.shop-locate-button:disabled { @apply opacity-60; }
+.shop-location-compact { @apply flex items-center justify-between gap-2 mt-2; }
+.shop-location-status { @apply inline-flex items-center gap-1.5 text-[10px] text-brand leading-5; }
+.shop-location-dot { @apply block size-1.5 rounded-full bg-brand; }
+.shop-location-actions { @apply flex items-center gap-1; }
+.shop-location-actions > button { @apply inline-flex items-center justify-center size-8 text-[14px] text-brand bg-transparent p-0 rounded-md; }
+.shop-location-actions > button:hover { background: #e8ddc6; }
+.shop-location-actions > button:disabled { @apply opacity-50; }
+:root body main .shop-location-filter .shop-location-error { @apply text-[11px] leading-5 rounded-md p-3 mt-3 mb-0; background: #fbede4; color: #7e3d23; }
+.shop-radius-label { @apply flex flex-col gap-2 text-[11px] font-medium text-brand mt-3; }
+.shop-filter-sidebar select { @apply w-full min-w-0 text-xs text-brand rounded-md py-3 px-2.5 bg-ivory; border: 1px solid #ddcfb6; }
+.shop-filter-sidebar select:disabled { @apply opacity-50; }
+.shop-filter-group { @apply min-w-0 px-0 pb-0 pt-5 mt-6 mx-0; border: 0; border-top: 1px solid #e5d8bd; }
+.shop-filter-group legend { @apply text-xs font-semibold text-brand pt-5 px-0; }
+.shop-filter-choice { @apply flex items-center gap-2.5 text-xs text-body leading-5 py-2 cursor-pointer; }
+.shop-filter-choice input { @apply size-3.5 shrink-0 m-0; accent-color: #174c43; }
+.shop-filter-choice small { @apply ml-auto text-[10px] text-accent; }
+.shop-category-options { @apply mt-1; }
+:root body main .shop-filter-sidebar .shop-filter-note { @apply text-[11px] leading-5 mt-6 mb-0; }
+.shop-directory-results { @apply min-w-0; }
+.shop-results-toolbar { @apply flex items-center justify-between gap-5 mb-5 pb-5; border-bottom: 1px solid #e5d8bd; }
+:root body main .shop-results-toolbar p { @apply text-sm leading-6 m-0; }
+.shop-results-toolbar p strong { @apply text-brand font-semibold; }
+.shop-results-toolbar p > span { @apply block text-[11px] text-accent mt-1; }
+.shop-results-toolbar > label { @apply flex items-center gap-2 shrink-0 text-[11px] text-body; }
+.shop-results-toolbar select { @apply text-xs text-brand bg-transparent py-2 min-h-10; border: 0; }
+.shop-active-filters { @apply flex flex-wrap items-center gap-2 mb-5; }
+.shop-active-filters > span { @apply text-[11px] text-body mr-1; }
+.shop-active-filters > button { @apply inline-flex items-center gap-2 text-[10px] font-medium text-brand rounded-full px-3 py-2 bg-cream; border: 1px solid #dfd0b5; }
+.shop-active-filters .shop-clear-all { @apply text-accent bg-transparent; border: 0; }
+.shop-directory-empty { @apply rounded-xl; }
+.shop-mobile-filters { @apply hidden; }
+.shop-directory-results .directory-shop-body { @apply px-5 pb-5; }
+:root .shop-directory-results .directory-shop-card h2 { @apply text-[29px]; }
+.shop-directory-results .directory-shop-photo > img { @apply h-[220px]; }
+.shop-directory-results .directory-shop-nearest { @apply top-[170px]; }
+.shop-directory-results .directory-shop-photo-caption { @apply text-[26px] px-5; }
+.shop-directory-results .directory-shop-actions .button { @apply px-3 gap-2 text-[11px]; }
+.shop-directory-results .directory-shop-directions { @apply px-3 text-[11px]; }
+@media (max-width: 1199px) and (min-width: 901px) {
+  .shop-directory-layout { @apply grid-cols-[250px_minmax(0,1fr)] gap-6; }
+  .shop-directory-results .directory-shop-grid { @apply grid-cols-1; }
+}
+@media (max-width: 900px) {
+  .shop-directory-layout { @apply grid-cols-1 gap-5; }
+  .shop-filter-sidebar { @apply hidden relative top-auto max-h-none; }
+  .shop-filter-sidebar.is-open { @apply block; }
+  .shop-mobile-filters { @apply inline-flex items-center justify-center gap-2 min-h-14 shrink-0 rounded-lg bg-brand text-white px-4 text-xs font-medium; }
+  .shop-mobile-filters > span { @apply text-[10px]; }
+  .shop-directory-results .directory-shop-grid { @apply grid-cols-2; }
+}
+@media (max-width: 640px) {
+  .shop-directory-results .directory-shop-grid { @apply grid-cols-1; }
+  .shop-directory-search { @apply gap-2 px-3; }
+  .shop-directory-search input { @apply text-xs; }
+  .shop-directory-top { @apply gap-2 mb-5; }
+  .shop-mobile-filters { @apply px-3; }
+  .shop-results-toolbar { @apply items-start gap-3; }
+  .shop-results-toolbar > label { @apply flex-col items-end gap-0; }
+  :root body main .shop-results-toolbar p { @apply text-xs; }
+  .shop-results-toolbar select { @apply text-[11px]; }
+}

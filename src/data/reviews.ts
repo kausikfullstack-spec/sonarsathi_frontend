@@ -41,3 +41,26 @@ export function storeReviewSummary(slug: string) {
   const reviews = reviewsByStore[slug] ?? []
   return { reviews, count: reviews.length, average: reviews.length ? reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length : 0 }
 }
+
+// Fictional review examples for the additional regional demo profiles.
+const regionalReviewers: Record<string, string[]> = {
+  'bardhaman-curzon-jewels': ['Sutapa Dey', 'Anirban Ghosh', 'Rupsa Mukherjee'],
+  'golapbag-gold-studio': ['Moumita Pal', 'Sayan Chatterjee', 'Diya Saha'],
+  'bankura-heritage-gold': ['Sushmita Karmakar', 'Ritwick Mondal', 'Tania Dutta'],
+  'lalbazar-jewel-house': ['Bipasha Sen', 'Subhajit Roy', 'Payel Das'],
+  'medinipur-gold-gallery': ['Sangita Maity', 'Kaushik Jana', 'Pritha Ghosh'],
+  'keranitola-jewel-studio': ['Debolina Kar', 'Arindam Das', 'Meghna Patra'],
+  'park-street-jewel-lounge': ['Shreya Dey', 'Rohan Basu', 'Aparna Paul'],
+}
+for (const [slug, names] of Object.entries(regionalReviewers)) {
+  reviewsByStore[slug] = names.map((name, index) => ({
+    id: slug + '-' + (index + 1), name, rating: index === 1 ? 4 : 5, verified: true,
+    date: ['2026-10-28', '2026-10-20', '2026-10-12'][index],
+    title: ['A lovely neighbourhood discovery', 'Helpful guidance and thoughtful options', 'A comfortable visit with family'][index],
+    comment: [
+      'I enjoyed exploring the designs for a family celebration. The team listened to what I had in mind and helped me compare a few different styles.',
+      'There were several pieces we wanted to try. We had a short wait, but the staff took time to explain the details and help us narrow down our favourites.',
+      'We appreciated the relaxed atmosphere and the chance to ask questions before choosing. It was helpful to compare the jewellery in person.'
+    ][index],
+  }))
+}

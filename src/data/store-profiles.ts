@@ -1,0 +1,147 @@
+// Fictional store identities. New regional addresses and pins represent approximate neighbourhood locations.
+export const storeProfiles = [
+  {
+    "slug": "bowbazar-gold-house",
+    "name": "Bowbazar Gold House",
+    "area": "Bowbazar",
+    "address": "166, Bepin Behari Ganguly St, Baithakkhana, Chandni Chawk, Bowbazar, Kolkata, West Bengal 700014",
+    "lat": 22.5685,
+    "lng": 88.3659,
+    "initials": "BG",
+    "specialty": "Traditional gold",
+    "description": "Discover traditional gold designs, intricate necklaces, and pieces for your family celebrations in the heart of Bowbazar.",
+    "city": "Kolkata"
+  },
+  {
+    "slug": "bhowanipore-jewel-studio",
+    "name": "Bhowanipore Jewel Studio",
+    "area": "Bhowanipore",
+    "address": "3, Ashutosh Mukherjee Rd, Gaza Park, Sreepally, Bhowanipore, Kolkata, West Bengal 700020",
+    "lat": 22.539,
+    "lng": 88.3465,
+    "initials": "BJ",
+    "specialty": "Everyday diamonds",
+    "description": "A neighbourhood studio for delicate diamonds and understated everyday pieces. Discover something meaningful for yourself or someone you love.",
+    "city": "Kolkata"
+  },
+  {
+    "slug": "salt-lake-gold-gallery",
+    "name": "Salt Lake Gold Gallery",
+    "area": "Salt Lake",
+    "address": "BUS STOP, BA 54 SECTOR 1, behind Hariyana Vidya Mandir, BIDHAN NAGAR, Bidhannagar, Kolkata, West Bengal 700064",
+    "lat": 22.5984,
+    "lng": 88.4088,
+    "initials": "SG",
+    "specialty": "Contemporary gold",
+    "description": "Modern silhouettes meet the warmth of gold. Browse a collection of wearable favourites for workdays, weekends, and everything in between.",
+    "city": "Kolkata"
+  },
+  {
+    "slug": "diamond-plaza-jewels",
+    "name": "Diamond Plaza Jewels",
+    "area": "Jessore Road",
+    "address": "4th Floor, DIAMOND PLAZA MALL, 68, Jessore Rd, Kolkata, West Bengal 700055",
+    "lat": 22.6155,
+    "lng": 88.4122,
+    "initials": "DP",
+    "specialty": "Occasion jewellery",
+    "description": "Make your milestones shine with an occasion collection of statement necklaces, diamond-inspired rings, and thoughtful gifts.",
+    "city": "Kolkata"
+  },
+  {
+    "slug": "baguiati-heritage-jewellers",
+    "name": "Baguiati Heritage Jewellers",
+    "area": "Baguiati",
+    "address": "DC 1/12 Shastribagan, VIP Rd, opposite to Apex Nursing Home, beside To VIP Sweets, Desh Bandhu Nagar, Kolkata, West Bengal 700059",
+    "lat": 22.6111,
+    "lng": 88.4293,
+    "initials": "BH",
+    "specialty": "Bridal favourites",
+    "description": "Celebrate a new chapter with classic bridal-inspired designs, warm gold bangles, and heirloom-style pieces to treasure.",
+    "city": "Kolkata"
+  },
+  {
+    "slug": "bardhaman-curzon-jewels",
+    "name": "Bardhaman Curzon Jewels",
+    "city": "Bardhaman",
+    "area": "Curzon Gate",
+    "address": "Curzon Gate area, B.C. Road, Bardhaman, Purba Bardhaman, West Bengal",
+    "lat": 23.2326,
+    "lng": 87.864,
+    "initials": "BC",
+    "specialty": "Traditional gold",
+    "description": "Explore classic gold necklaces, occasion-ready earrings, and family gifting inspiration in our Curzon Gate neighbourhood demo collection."
+  },
+  {
+    "slug": "golapbag-gold-studio",
+    "name": "Golapbag Gold Studio",
+    "city": "Bardhaman",
+    "area": "Golapbag",
+    "address": "Golapbag area, Bardhaman, Purba Bardhaman, West Bengal",
+    "lat": 23.2559,
+    "lng": 87.8466,
+    "initials": "GG",
+    "specialty": "Everyday elegance",
+    "description": "Discover lightweight jewellery and contemporary details for everyday moments, with a thoughtfully selected sample collection for Bardhaman."
+  },
+  {
+    "slug": "bankura-heritage-gold",
+    "name": "Bankura Heritage Gold",
+    "city": "Bankura",
+    "area": "Machantala",
+    "address": "Machantala area, Bankura, West Bengal",
+    "lat": 23.2324,
+    "lng": 87.0735,
+    "initials": "BH",
+    "specialty": "Heritage-inspired jewellery",
+    "description": "Celebrate traditional craftsmanship with warm gold tones and heirloom-inspired designs in our Bankura neighbourhood demo collection."
+  },
+  {
+    "slug": "lalbazar-jewel-house",
+    "name": "Lalbazar Jewel House",
+    "city": "Bankura",
+    "area": "Lalbazar",
+    "address": "Lalbazar area, Bankura, West Bengal",
+    "lat": 23.2381,
+    "lng": 87.0783,
+    "initials": "LJ",
+    "specialty": "Celebration favourites",
+    "description": "Find jewellery inspiration for family celebrations, meaningful gifts, and new beginnings with this sample Lalbazar collection."
+  },
+  {
+    "slug": "medinipur-gold-gallery",
+    "name": "Medinipur Gold Gallery",
+    "city": "Medinipur",
+    "area": "Kotwali",
+    "address": "Kotwali area, Medinipur, Paschim Medinipur, West Bengal",
+    "lat": 22.4257,
+    "lng": 87.3199,
+    "initials": "MG",
+    "specialty": "Classic gold collections",
+    "description": "Browse timeless designs and subtle modern details for every occasion in this demo jewellery collection from the heart of Medinipur."
+  },
+  {
+    "slug": "keranitola-jewel-studio",
+    "name": "Keranitola Jewel Studio",
+    "city": "Medinipur",
+    "area": "Keranitola",
+    "address": "Keranitola area, Medinipur, Paschim Medinipur, West Bengal",
+    "lat": 22.4191,
+    "lng": 87.321,
+    "initials": "KJ",
+    "specialty": "Contemporary gifting",
+    "description": "Discover delicate details and wearable favourites for thoughtful gifting, with a sample selection inspired by everyday jewellery in Medinipur."
+  },
+  {
+    "slug": "park-street-jewel-lounge",
+    "name": "Park Street Jewel Lounge",
+    "city": "Kolkata",
+    "area": "Park Street",
+    "address": "Park Street area, Kolkata, West Bengal",
+    "lat": 22.5528,
+    "lng": 88.3523,
+    "initials": "PJ",
+    "specialty": "Modern occasion jewellery",
+    "description": "Explore elegant occasion pieces and contemporary jewellery inspiration with our Park Street demo collection in central Kolkata."
+  }
+]

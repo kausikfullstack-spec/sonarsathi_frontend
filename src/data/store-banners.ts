@@ -6,3 +6,14 @@ export const storeBanners: Record<string, string> = {
   "diamond-plaza-jewels": "/images/store-banners/diamond-plaza-jewels.jpg",
   "baguiati-heritage-jewellers": "/images/store-banners/baguiati-heritage-jewellers.webp"
 }
+
+// Additional demo profiles share illustrative showroom photography.
+Object.assign(storeBanners, {
+  'bardhaman-curzon-jewels': storeBanners['bowbazar-gold-house'],
+  'golapbag-gold-studio': storeBanners['bhowanipore-jewel-studio'],
+  'bankura-heritage-gold': storeBanners['baguiati-heritage-jewellers'],
+  'lalbazar-jewel-house': storeBanners['diamond-plaza-jewels'],
+  'medinipur-gold-gallery': storeBanners['salt-lake-gold-gallery'],
+  'keranitola-jewel-studio': storeBanners['bhowanipore-jewel-studio'],
+  'park-street-jewel-lounge': storeBanners['diamond-plaza-jewels'],
+})

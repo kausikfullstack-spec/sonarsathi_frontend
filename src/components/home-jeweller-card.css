@@ -6,7 +6,7 @@
 .home-jeweller-card:nth-child(3) { background: #f0f3eb; }
 .home-jeweller-card:hover, .home-jeweller-card:focus-within { border-color: #b79a6b; box-shadow: 0 12px 30px #765a3d18; }
 .home-jeweller-photo { @apply relative block h-[250px] overflow-hidden; background: #fafafa; }
-.home-jeweller-photo img { @apply block size-full object-contain px-8 pt-6 pb-12; }
+.home-jeweller-photo img { @apply block size-full object-cover; object-position: center; }
 .home-jeweller-demo { @apply absolute top-4 left-4 text-[9px] uppercase tracking-wider font-semibold text-brand rounded-full py-2 px-3; background: #fff5dce8; border: 1px solid #e7dcc5; }
 .home-jeweller-photo-note { @apply absolute bottom-0 inset-x-0 flex items-center justify-between gap-3 pl-24 pr-5 py-3 text-[10px] font-medium text-white bg-brand; }
 .home-jeweller-photo-note > svg { @apply size-4; color: #e3c896; }
