@@ -1,0 +1,21 @@
+@reference "./tailwind.css";
+/* Keep descriptions readable across page-specific and mobile styles. */
+:root body :is(main, footer, dialog) p,
+:root body :is(main, footer, dialog) p[class] {
+  @apply text-[clamp(15px,_1.1vw,_17px)] font-medium leading-[1.85];
+}
+:root body :is(main, footer, dialog) :is(.hero-copy, .shopping-intro, .centered) > p {
+  @apply text-[clamp(16px,_1.25vw,_18px)] font-medium leading-[1.85];
+}
+:root body :is(main, footer, dialog) p:is(
+  .catalogue-note, .form-note, .account-preview-note, .account-saved-note,
+  .design-reference, .jewellery-image-note, .account-status,
+  .jewellery-share-status, .filter-help
+) {
+  @apply text-[13px] font-medium leading-[1.8];
+}
+@media (max-width: 540px) {
+  :root body main .hero-copy > p {
+    @apply max-w-[36ch];
+  }
+}

@@ -1,0 +1,115 @@
+@reference './tailwind.css';
+
+:root {
+  --teal: #174c43;
+  --copper: #765a3d;
+  --muted: #514b44;
+  --cream: #fff5dc;
+  --border: #e5d8bd;
+  @apply font-body text-body bg-ivory font-normal;
+}
+
+body { @apply bg-ivory; }
+
+:root :is(h1, h2, h3, .brand > span, .hero-photo-caption) {
+  @apply font-display;
+}
+:root h1 { @apply text-brand font-semibold; }
+:root h2 { @apply text-heading font-semibold; }
+:root :is(.product-info h3, .jewellery-information h1) { @apply text-brand; }
+:root .product-info h3 { @apply text-[26px] leading-[1.2] font-semibold; }
+:root :is(.price-row strong, .jewellery-price strong) { @apply font-body text-price font-semibold; }
+:root :is(.brand small, .filter-heading h2, .directory-stats strong) { @apply font-body; }
+
+:root body :is(main, footer, dialog) p,
+:root body :is(main, footer, dialog) p[class],
+:root body :is(main, footer, dialog) :is(.hero-copy, .shopping-intro, .centered) > p {
+  @apply font-body text-body font-normal;
+}
+
+:root .header {
+  @apply bg-brand text-white;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  position: relative;
+  padding-inline: max(24px, calc((100% - 1280px) / 2));
+}
+:root :is(.navigation a, .header-shortcut, .header .location, .header .icon-button) {
+  @apply font-body text-white font-medium;
+}
+:root :is(.header .brand, .header .brand small, .header .brand-accent) { @apply text-white; }
+:root :is(.header .brand > svg, .header-shortcut > svg, .header .location > svg) { color: #e3c896; }
+:root .header .location option { @apply text-brand bg-ivory; }
+:root :is(.header-shortcut:hover, .navigation a:hover, .header-shortcut.active) { color: #f4deb3; }
+:root .category-navigation { @apply bg-brand; border-top-color: #ffffff26; }
+:root .category-navigation :is(a, button) { @apply text-white font-medium; }
+:root .category-navigation :is(a:hover, a.active, button.active) { color: #f4deb3; background: #ffffff0d; }
+:root .category-dropdown { @apply bg-brand; }
+:root .announcement { background: #123d35; }
+
+:root :is(.search-strip, .trust-bar, .journey, .shopping-panel, .product-filters, .jewellery-store-panel, .booking-product) {
+  @apply bg-cream;
+  border-color: var(--border);
+}
+:root :is(.directory-hero, .listing-hero) {
+  background: linear-gradient(110deg, #fff5dc, #fffaf0 80%);
+}
+:root :is(.booking-modal, .design-zoom-dialog, .account-form input, .account-user-icon) { @apply bg-ivory; }
+:root :is(.search-inner > span, .trust-item small, .product-info .product-store, .product-details) { @apply text-body; }
+:root :is(.button, .button.small, .button.light) {
+  @apply font-body font-semibold bg-brand text-white;
+  border-color: var(--teal);
+}
+:root :is(.button:hover, .button.light:hover) { background: #103e36; }
+:root .closing-banner :is(h2, p) { @apply text-white; }
+:root .closing-banner h2 em { color: #e3c896; }
+:root .header-shortcuts { border-color: #ffffff26; }
+
+:root .header .brand { @apply shrink-0; }
+:root .header .navigation a { @apply whitespace-nowrap leading-5; }
+:root .header .header-actions { @apply shrink-0; }
+:root .header .location select { @apply min-h-10; }
+:root .header .brand small { @apply text-[7px] tracking-[1px]; }
+:root .header-shortcut { @apply min-h-11; }
+:root .category-navigation nav a > svg { color: #e3c896; }
+:root .category-navigation .category-more > button {
+  @apply bg-transparent text-white text-xs font-medium min-h-10 rounded-md;
+  border-color: #e3c89680;
+}
+:root .category-navigation .category-more > button:hover,
+:root .category-navigation .category-more > button.active {
+  background: #ffffff14;
+  color: #f4deb3;
+}
+:root .category-navigation .category-dropdown a:hover,
+:root .category-navigation .category-dropdown a.active {
+  background: #ffffff14;
+  color: #f4deb3;
+}
+:root .search-inner { @apply min-h-14; }
+:root .search-inner > span { @apply text-[10px] leading-4; }
+:root .search-inner form { @apply min-w-0 flex-1 max-w-[540px]; }
+:root .search-inner input { @apply text-xs min-h-11; }
+
+@media (min-width: 801px) and (max-width: 1250px) {
+  :root .header { @apply flex-wrap h-auto gap-y-4 py-5; }
+  :root .header .navigation { @apply order-3 w-full justify-center; }
+}
+
+@media (max-width: 800px) {
+  :root .header { @apply grid grid-cols-[minmax(0,1fr)_auto_auto_auto] h-auto min-h-0 px-4 py-4 gap-x-2 gap-y-3; }
+  :root .header .header-actions { @apply contents; }
+  :root .navigation.open { @apply bg-brand top-full z-30 m-0; left: 0; right: 0; }
+  :root .header .brand > span { @apply text-[27px]; }
+  :root .header .brand > svg { @apply text-[28px]; }
+  :root .header .brand small { @apply text-[5px] tracking-[.5px]; }
+  :root .header-shortcuts { @apply col-span-full grid grid-cols-4 gap-2; }
+  :root .header-shortcut { @apply flex-col justify-center gap-1 text-[11px] text-center; }
+  :root .header-shortcut > svg { @apply size-5; }
+  :root .search-inner form { @apply max-w-none w-full; }
+}
+
+@media (max-width: 540px) {
+  :root .category-tabs { @apply -mx-4 px-4; }
+}

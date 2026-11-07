@@ -1,0 +1,46 @@
+@reference '../../tailwind.css';
+
+.coverflow { @apply relative isolate w-full overflow-hidden py-16; background: #123b34; --coverflow-step: 270px; touch-action: pan-y; }
+.coverflow-ambience { @apply absolute inset-0 -z-10 pointer-events-none; }
+.coverflow-ambience img { @apply size-full object-cover opacity-20; filter: blur(36px); transform: scale(1.15); }
+.coverflow-ambience::after { content: ''; @apply absolute inset-0; background: radial-gradient(ellipse at center, #123b3455, #0f302aee); }
+.coverflow-inner { @apply relative max-w-6xl mx-auto px-4; }
+.coverflow-heading { @apply text-center max-w-2xl mx-auto mb-8; }
+.coverflow-heading .eyebrow { @apply justify-center; color: #e3c896; }
+:root .coverflow-heading h2 { @apply text-white text-[clamp(34px,4vw,48px)] mt-4 mb-3; }
+.coverflow-heading h2 em { color: #e3c896; }
+:root body main .coverflow .coverflow-heading p { @apply text-sm leading-7 font-normal; color: #f4ebdc; }
+.coverflow-stage { @apply relative flex items-center justify-center h-[510px]; perspective: 1400px; }
+.coverflow-card { @apply absolute overflow-hidden rounded-2xl w-[320px] h-[480px]; background: #203e35; border: 1px solid #e3c89640; transform-origin: center; transition: transform .8s cubic-bezier(.25,1,.5,1), opacity .8s ease, filter .8s ease; box-shadow: 0 16px 36px #0005; }
+.coverflow-card.is-active { box-shadow: 0 24px 55px #0007, 0 0 35px #e3c89618; }
+.coverflow-photo { @apply absolute inset-0 size-full object-cover; }
+.coverflow-shade { @apply absolute inset-0 pointer-events-none; background: linear-gradient(180deg,#0a241f18 30%,#0a241f99 50%,#0a241ff5 100%); }
+.coverflow-content { @apply relative z-10 flex flex-col justify-between size-full p-6 text-center; opacity: 0; transform: translateY(16px); transition: opacity .5s, transform .5s; pointer-events: none; }
+.is-active .coverflow-content { @apply opacity-100; transform: translateY(0); pointer-events: auto; }
+.coverflow-tag { @apply self-end text-[11px] font-semibold tracking-wider px-3 py-2 rounded-full; background: #123b34cc; color: #f6dfb2; }
+:root .coverflow-content h3 { @apply font-display text-[30px] leading-[1.1] font-semibold text-white; }
+.coverflow-subtitle { @apply block mt-2 text-xs font-medium; color: #f6dfb2; }
+.coverflow-rule { @apply block w-9 h-px mx-auto my-3; background: #e3c896; }
+:root body main .coverflow .coverflow-content p { @apply text-[13px] leading-6 mb-4 font-normal; color: #f4ebdc; }
+.coverflow-cta { @apply inline-flex items-center justify-center gap-3 px-5 py-3 rounded-full text-xs font-semibold min-h-11; color: #173c33; background: #e3c896; }
+.coverflow-cta:hover { background: #f4deb3; }
+.coverflow-select { @apply absolute inset-0 z-20 bg-transparent cursor-pointer; }
+.coverflow-controls { @apply relative flex items-center justify-center gap-3 mt-7; }
+.coverflow-arrow { @apply inline-flex items-center justify-center size-11 rounded-full text-white text-xl shrink-0; border: 1px solid #e3c89666; background: #0a241f88; }
+.coverflow-arrow:hover { background: #ffffff1a; }
+.coverflow-dots { @apply flex items-center gap-0; }
+.coverflow-dots button { @apply flex items-center justify-center w-8 h-11 p-0 bg-transparent; }
+.coverflow-dots span { @apply block size-2 rounded-full; background: #ffffff50; transition: width .3s, background .3s; }
+.coverflow-dots [aria-current='true'] span { @apply w-6; background: #e3c896; }
+.coverflow-pause { @apply ml-1 text-base; }
+@media (max-width: 640px) {
+  .coverflow { @apply py-12; --coverflow-step: 200px; }
+  .coverflow-stage { @apply h-[470px]; }
+  .coverflow-card { width: min(290px, calc(100vw - 64px)); height: 450px; }
+  .coverflow-controls { @apply gap-1 mt-5; }
+  .coverflow-content { @apply p-5; }
+  .coverflow-pause { @apply ml-0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .coverflow-card, .coverflow-content, .coverflow-dots span { transition: none; }
+}

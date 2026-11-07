@@ -1,0 +1,37 @@
+@reference '../tailwind.css';
+
+:root .product-card {
+  @apply overflow-hidden rounded-xl;
+  background: #fff0d5;
+  border: 1px solid #e6d5b8;
+  transition: box-shadow .25s ease, border-color .25s ease;
+}
+:root .product-card:nth-child(3n + 2) { background: #f6e8df; }
+:root .product-card:nth-child(3n) { background: #eeeade; }
+:root .product-card:hover,
+:root .product-card:focus-within {
+  border-color: #b79a6b;
+  box-shadow: 0 10px 28px #765a3d18;
+}
+:root .product-card .product-image { @apply bg-[#fffdf8] aspect-square; }
+:root .product-card .product-info { @apply px-5 pt-5 pb-4; }
+:root .product-photo-button { @apply relative isolate; }
+:root .product-card .product-image img {
+  @apply object-contain w-full h-full;
+  transform: none;
+  transition: opacity .35s ease;
+}
+:root .product-photo-button .product-front-image { @apply relative opacity-100; }
+:root .product-photo-button .product-alternate-image { @apply absolute inset-0 opacity-0; }
+:root .product-photo-button.has-alternate:focus-visible .product-front-image { @apply opacity-0; }
+:root .product-photo-button.has-alternate:focus-visible .product-alternate-image { @apply opacity-100; }
+:root .product-card .product-store { border-top-color: #d6c3a5; }
+
+@media (hover: hover) {
+  :root .product-card:hover .has-alternate .product-front-image { @apply opacity-0; }
+  :root .product-card:hover .has-alternate .product-alternate-image { @apply opacity-100; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root .product-card,
+  :root .product-card .product-image img { transition: none; }
+}

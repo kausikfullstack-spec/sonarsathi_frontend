@@ -1,1 +1,115 @@
-﻿.account-layout{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:start;gap:32px}.account-form-panel{background:transparent;padding:36px}.account-form-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:28px}.account-user-icon{display:grid;place-items:center;width:48px;height:48px;background:var(--cream);border:1px solid var(--border);border-radius:50%;color:var(--copper);font-size:23px}.account-mode label{display:block;font-size:10px;color:var(--muted);margin-bottom:6px}.account-mode>div{position:relative}.account-mode select{appearance:none;background:transparent;border:1px solid var(--border);color:var(--teal);padding:10px 38px 10px 14px;min-width:140px;cursor:pointer;font-size:12px}.account-mode svg{position:absolute;right:13px;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--copper);font-size:14px}.account-form{display:flex;flex-direction:column;gap:18px}.account-form>label{display:flex;flex-direction:column;gap:8px;font-size:12px}.account-form input{width:100%;min-width:0;background:#fffefa;border:1px solid var(--border);padding:13px 14px;color:var(--teal);font-size:13px;border-radius:0}.account-form input::placeholder{color:var(--muted);opacity:.8}.account-password{position:relative;display:block}.account-password input{padding-right:48px}.account-password button{position:absolute;right:3px;top:3px;bottom:3px;width:40px;background:transparent;display:grid;place-items:center;color:var(--muted);font-size:18px}.account-form>.account-preview-note{font-size:11px;line-height:1.7;margin:0}.account-form>.button{width:100%;justify-content:space-between}.account-status{color:var(--teal);font-size:12px;line-height:1.8}.account-status:empty{display:none}.account-switch{margin-top:24px;border-top:1px solid var(--border);padding-top:22px;text-align:center;font-size:12px;color:var(--muted)}.account-switch button{background:transparent;color:var(--copper);text-decoration:underline;text-underline-offset:4px;padding:5px}.account-saved{padding:40px}.account-saved>.eyebrow{margin:8px 0 20px}.account-saved h2{font-size:32px}.account-saved>.account-saved-note{font-size:11px;margin:24px 0 0}.account-saved .button{gap:16px}@media(max-width:800px){.account-layout{grid-template-columns:1fr;gap:24px}.account-form-panel,.account-saved{padding:26px}}@media(max-width:380px){.account-form-panel,.account-saved{padding:20px}.account-form-heading{gap:12px}}
+@reference "../tailwind.css";
+.account-layout {
+  @apply grid-cols-[minmax(0,1.15fr)_minmax(0,.85fr)] items-start gap-[32px];
+}
+.account-form-panel {
+  @apply bg-transparent p-[36px];
+}
+.account-form-heading {
+  @apply flex items-center justify-between gap-[24px] mb-[28px];
+}
+.account-user-icon {
+  @apply grid;
+  place-items: center;
+  @apply w-[48px] h-[48px] bg-cream;
+  border: 1px solid var(--border);
+  @apply rounded-[50%] text-accent text-[23px];
+}
+.account-mode label {
+  @apply block text-[10px] text-muted mb-[6px];
+}
+.account-mode>div {
+  @apply relative;
+}
+.account-mode select {
+  @apply appearance-none bg-transparent;
+  border: 1px solid var(--border);
+  @apply text-brand;
+  padding: 10px 38px 10px 14px;
+  @apply min-w-[140px] cursor-pointer text-[12px];
+}
+.account-mode svg {
+  @apply absolute right-[13px] top-[50%];
+  transform: translateY(-50%);
+  @apply pointer-events-none text-accent text-[14px];
+}
+.account-form {
+  @apply flex flex-col gap-[18px];
+}
+.account-form>label {
+  @apply flex flex-col gap-[8px] text-[12px];
+}
+.account-form input {
+  @apply w-[100%] min-w-[0] bg-[#fffefa];
+  border: 1px solid var(--border);
+  padding: 13px 14px;
+  @apply text-brand text-[13px] rounded-[0];
+}
+.account-form input::placeholder {
+  @apply text-muted opacity-[.8];
+}
+.account-password {
+  @apply relative block;
+}
+.account-password input {
+  @apply pr-[48px];
+}
+.account-password button {
+  @apply absolute right-[3px] top-[3px] bottom-[3px] w-[40px] bg-transparent grid;
+  place-items: center;
+  @apply text-muted text-[18px];
+}
+.account-form>.account-preview-note {
+  @apply text-[11px] leading-[1.7] m-[0];
+}
+.account-form>.button {
+  @apply w-[100%] justify-between;
+}
+.account-status {
+  @apply text-brand text-[12px] leading-[1.8];
+}
+.account-status:empty {
+  @apply hidden;
+}
+.account-switch {
+  @apply mt-[24px];
+  border-top: 1px solid var(--border);
+  @apply pt-[22px] text-center text-[12px] text-muted;
+}
+.account-switch button {
+  @apply bg-transparent text-accent underline;
+  text-underline-offset: 4px;
+  @apply p-[5px];
+}
+.account-saved {
+  @apply p-[40px];
+}
+.account-saved>.eyebrow {
+  margin: 8px 0 20px;
+}
+.account-saved h2 {
+  @apply text-[32px];
+}
+.account-saved>.account-saved-note {
+  @apply text-[11px];
+  margin: 24px 0 0;
+}
+.account-saved .button {
+  @apply gap-[16px];
+}
+@media(max-width:800px){
+  .account-layout {
+    @apply grid-cols-[1fr] gap-[24px];
+  }
+  .account-form-panel,.account-saved {
+    @apply p-[26px];
+  }
+}
+@media(max-width:380px){
+  .account-form-panel,.account-saved {
+    @apply p-[20px];
+  }
+  .account-form-heading {
+    @apply gap-[12px];
+  }
+}

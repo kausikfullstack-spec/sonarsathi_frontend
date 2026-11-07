@@ -1,0 +1,552 @@
+[
+  {
+    "id": 2,
+    "category": "Earrings",
+    "sourceTitle": "Julie Earrings",
+    "source": "https://chipleejewellery.com/products/julie-earrings",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Earrings.jpg?v=1793239616",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Earrings_Lifestyle.jpg?v=1793681245"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 100,
+    "category": "Earrings",
+    "sourceTitle": "999 Pure Gold Clover Earrings",
+    "source": "https://chipleejewellery.com/products/999-pure-gold-clover-earrings",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/999_Pure_Gold_Clover_Earrings.jpg?v=1793580819",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Jewellery_30.10.26__16-Edit-Edit-Edit.jpg?v=1793670306"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 101,
+    "category": "Earrings",
+    "sourceTitle": "Four Leaf Blossom Earrings",
+    "source": "https://chipleejewellery.com/products/four-leaf-blossom-earrings",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Four_Leaf_Blossom_Earrings.jpg?v=1793581481",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Four_Leaf_Blossom_Earrings_2.jpg?v=1793670346"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 102,
+    "category": "Earrings",
+    "sourceTitle": "Heart Earrings",
+    "source": "https://chipleejewellery.com/products/heart-earrings",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Heart_Earrings.jpg?v=1793581853",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Heart_Earrings_2.jpg?v=1793670956"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 4,
+    "category": "Bangles",
+    "sourceTitle": "Duo Tone Geometric Bangle",
+    "source": "https://chipleejewellery.com/products/duo-tone-geometric-bangle",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Duo_Tone_Geometric_Bangle.jpg?v=1791940393",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/DSC07652-Edit-Edit-Edit.jpg?v=1793349660"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 110,
+    "category": "Bangles",
+    "sourceTitle": "Arabesque Bangle",
+    "source": "https://chipleejewellery.com/products/arabesque-bangle",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Arabesque_Bangle.jpg?v=1791247820",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Arabesque_Bangle_2.jpg?v=1791247828"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 111,
+    "category": "Bangles",
+    "sourceTitle": "Lattice Statement Bangle",
+    "source": "https://chipleejewellery.com/products/lattice-statement-bangle-1",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Lattice_Statement_Bangle.jpg?v=1789953649",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Lattice_Statement_Bangle_2.jpg?v=1789953657"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 112,
+    "category": "Bangles",
+    "sourceTitle": "Lattice Statement Bangle",
+    "source": "https://chipleejewellery.com/products/lattice-statement-bangle",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Lattice_Bangle_2.jpg?v=1789953403",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Lattice_Statement_Bangle_3.jpg?v=1791167080"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 3,
+    "category": "Rings",
+    "sourceTitle": "Julie Ring",
+    "source": "https://chipleejewellery.com/products/julie-ring",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Ring.jpg?v=1793239601",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Ring_Lifestyle_2.jpg?v=1793681208"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 120,
+    "category": "Rings",
+    "sourceTitle": "999 Pure Gold Dainty Ring",
+    "source": "https://chipleejewellery.com/products/999-pure-gold-dainty-ring",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/999_Pure_Gold_Dainty_Ring.jpg?v=1793582158",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/999_Pure_Gold_Dainty_Ring_2.jpg?v=1793673567"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 121,
+    "category": "Rings",
+    "sourceTitle": "Block Band Ring",
+    "source": "https://chipleejewellery.com/products/block-band-ring",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Block_Band_Ring.jpg?v=1793581329",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Block_Band_Ring_2.jpg?v=1793674811"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 122,
+    "category": "Rings",
+    "sourceTitle": "Dainty Sweetheart Ring",
+    "source": "https://chipleejewellery.com/products/dainty-sweetheart-ring",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Dainty_Heart_Ring.jpg?v=1793583322",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Dainty_Sweetheart_Ring_2.jpg?v=1793674066"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 5,
+    "category": "Bracelets",
+    "sourceTitle": "Julie Bracelet",
+    "source": "https://chipleejewellery.com/products/julie-bracelet",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Bracelet.jpg?v=1793239583",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Bracelet_Lifestyle.jpg?v=1793681013"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 130,
+    "category": "Bracelets",
+    "sourceTitle": "Beaded Bracelet",
+    "source": "https://chipleejewellery.com/products/beaded-bracelet",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Beaded_Bracelet.jpg?v=1793584916",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Beaded_Bracelet_2.jpg?v=1793584922"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 131,
+    "category": "Bracelets",
+    "sourceTitle": "Beaded Paperclip Bracelet",
+    "source": "https://chipleejewellery.com/products/beaded-paperclip-bracelet",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Beaded_Paperclip_Bracelet.jpg?v=1793585246",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Beaded_Paperclip_Bracelet_2.jpg?v=1793585253"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 132,
+    "category": "Bracelets",
+    "sourceTitle": "Faceted Bead Bracelet",
+    "source": "https://chipleejewellery.com/products/faceted-bead-bracelet",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Faceted_Bead_Bracelet.jpg?v=1793585397",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/DSC09486-Edit.jpg?v=1793952047"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 6,
+    "category": "Pendants",
+    "sourceTitle": "Fortune Cat Pendant",
+    "source": "https://chipleejewellery.com/products/fortune-cat-pendant",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Fortune_Cat_Pendant.jpg?v=1793871981",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/GoldLuckyCatPendantonGreigePaper-Edit.jpg?v=1793953323"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 140,
+    "category": "Pendants",
+    "sourceTitle": "Lucky Clover Pendant",
+    "source": "https://chipleejewellery.com/products/lucky-clover-pendant",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Lucky_Clover_Pendant.jpg?v=1793871856",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Petitegoldclovernecklaceongreigetiles-Edit.jpg?v=1793952871"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 141,
+    "category": "Pendants",
+    "sourceTitle": "Floral Statement Pendant",
+    "source": "https://chipleejewellery.com/products/floral-statement-pendant",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Floral_Statement_Pendant.jpg?v=1789952399",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Necklace_and_Pendant.jpg?v=1790821329"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 142,
+    "category": "Pendants",
+    "sourceTitle": "Duo Tone Floral Statement Pendant",
+    "source": "https://chipleejewellery.com/products/duo-tone-floral-statement-pendant",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Duo_Tone_Floral_Statement_Pendant.jpg?v=1789952482",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Bracelet_and_Necklace.jpg?v=1790821681"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 1,
+    "category": "Necklaces",
+    "sourceTitle": "Julie Necklace",
+    "source": "https://chipleejewellery.com/products/julie-necklace",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Necklace.jpg?v=1793239577",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Julie_Jewellery_Set.jpg?v=1793680978"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 150,
+    "category": "Necklaces",
+    "sourceTitle": "Blissful Harmony Necklace",
+    "source": "https://chipleejewellery.com/products/blissful-harmony-necklace",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Blissful_Harmony_Necklace_1.jpg?v=1792378140",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Blissful_Harmony_Necklace_2.jpg?v=1791787262"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 151,
+    "category": "Necklaces",
+    "sourceTitle": "Dragon and Phoenix Necklace",
+    "source": "https://chipleejewellery.com/products/dragon-phoenix-necklace",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Dragon_Phoenix_Necklace.jpg?v=1779928818",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Dragon_and_Phoenix_Jewellery_Set.jpg?v=1791778121"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 152,
+    "category": "Necklaces",
+    "sourceTitle": "Snake Necklace",
+    "source": "https://chipleejewellery.com/products/snake-necklace",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Snake_Necklace.jpg?v=1790129653",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/DSC05884-Edit-2-Edit-Edit-Edit-2.jpg?v=1791346303"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 160,
+    "category": "Chains",
+    "sourceTitle": "Duo Tone Link Chain",
+    "source": "https://chipleejewellery.com/products/duo-tone-link-chain",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Duo_Tone_Link_Chain_Necklace_2.jpg?v=1782096670",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Screenshot2026-07-02at3.08.09PM.png?v=1782976107"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 161,
+    "category": "Chains",
+    "sourceTitle": "Duo Tone Paperclip Link Chain",
+    "source": "https://chipleejewellery.com/products/duo-tone-paperclip-link-chain",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Duo_Tone_Paperclip_Link_Chain.jpg?v=1782097046",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Screenshot2026-09-02at12.40.02PM.png?v=1788324057"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 162,
+    "category": "Chains",
+    "sourceTitle": "Textured Link Chain",
+    "source": "https://chipleejewellery.com/products/textured-link-chain-1",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Textured_Link_Chain.jpg?v=1782096731",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Screenshot2026-07-01at12.01.08PM.png?v=1782878502"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 163,
+    "category": "Chains",
+    "sourceTitle": "Bold Box Link Chain",
+    "source": "https://chipleejewellery.com/products/bold-box-link-chain",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Bold_Box_Link_Chain.jpg?v=1779692043",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/Screenshot2026-06-02at4.34.10PM.png?v=1780389266"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 170,
+    "category": "Necklace Set",
+    "sourceTitle": "Zircon Necklace 200508",
+    "source": "https://www.kushals.com/products/zircon-necklace-200508",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-necklace-white-rodium-zircon-necklace-200508-1266549227.jpg?v=1793968330",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-necklace-zircon-necklace-200508-1266549226.jpg?v=1793968315"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 171,
+    "category": "Necklace Set",
+    "sourceTitle": "Antique Necklace 188081",
+    "source": "https://www.kushals.com/products/antique-necklace-188081",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-necklace-ruby-green-gold-antique-necklace-188081-1187350170.jpg?v=1756223710",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-necklace-ruby-green-gold-antique-necklace-188081-1187350169.jpg?v=1756223706"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 172,
+    "category": "Necklace Set",
+    "sourceTitle": "Antique Necklace 193805",
+    "source": "https://www.kushals.com/products/antique-necklace-193805",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-necklace-ruby-green-gold-antique-necklace-193805-1211744803.jpg?v=1766047377",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-necklace-ruby-green-gold-antique-necklace-193805-1211744802.jpg?v=1766047380"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 173,
+    "category": "Necklace Set",
+    "sourceTitle": "Trendy Necklace 163231",
+    "source": "https://www.kushals.com/products/trendy-necklace-163231",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/trendy-necklace-white-gold-trendy-necklace-163231-1254146787.jpg?v=1786694358",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/trendy-necklace-white-gold-trendy-necklace-163231-1254146785.jpg?v=1786694351"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 180,
+    "category": "Pendant Set",
+    "sourceTitle": "Zircon Pendant Earring 196782",
+    "source": "https://www.kushals.com/products/zircon-pendant-earring-196782",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-white-gold-zircon-pendant-earring-196782-1220502163.jpg?v=1770815324",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-zircon-pendant-earring-196782-1220502162.jpg?v=1770816968"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 181,
+    "category": "Pendant Set",
+    "sourceTitle": "Zircon Pendant Earring 158550",
+    "source": "https://www.kushals.com/products/zircon-pendant-earring-158550",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-zircon-pendant-earring-158550-37941346336924.jpg?v=1712038952",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-white-rodium-rod-zircon-pendant-earring-158550-37941347549340.jpg?v=1712038779"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 182,
+    "category": "Pendant Set",
+    "sourceTitle": "Zircon Pendant 182091",
+    "source": "https://www.kushals.com/products/zircon-pendant-182091",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-zircon-pendant-182091-1145634799.jpg?v=1741531029",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-zircon-pendant-182091-1145634798.jpg?v=1741531026"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 183,
+    "category": "Pendant Set",
+    "sourceTitle": "Zircon Pendant Earring 197138",
+    "source": "https://www.kushals.com/products/zircon-pendant-earring-197138",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-ruby-gold-zircon-pendant-earring-197138-1231172050.jpg?v=1775341194",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-pendant-set-zircon-pendant-earring-197138-1231172049.jpg?v=1775341185"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 190,
+    "category": "Mangalsutra",
+    "sourceTitle": "Antique Mangalsutra 202386",
+    "source": "https://www.kushals.com/products/antique-mangalsutra-202386",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-mangalsutra-ruby-green-gold-16-inch-antique-mangalsutra-202386-1256767456.jpg?v=1788340149",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-mangalsutra-antique-mangalsutra-202386-1256767455.jpg?v=1788340138"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 191,
+    "category": "Mangalsutra",
+    "sourceTitle": "Antique Mangalsutra 190649",
+    "source": "https://www.kushals.com/products/antique-mangalsutra-190649",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-mangalsutra-ruby-gold-16-inch-antique-mangalsutra-190649-1187349919.jpg?v=1756219493",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-mangalsutra-ruby-gold-16-inch-antique-mangalsutra-190649-1187349918.jpg?v=1756219396"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 192,
+    "category": "Mangalsutra",
+    "sourceTitle": "Zircon Mangalsutra 193784",
+    "source": "https://www.kushals.com/products/zircon-mangalsutra-193784",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-mangalsutra-white-rodium-gold-16-inch-zircon-mangalsutra-193784-1220502544.jpg?v=1770827496",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-mangalsutra-white-rodium-gold-16-inch-zircon-mangalsutra-193784-1220502543.jpg?v=1770827468"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 193,
+    "category": "Mangalsutra",
+    "sourceTitle": "Zircon Mangalsutra 196013",
+    "source": "https://www.kushals.com/products/zircon-mangalsutra-196013",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-mangalsutra-white-gold-16-inch-zircon-mangalsutra-196013-1211825611.jpg?v=1766082054",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-mangalsutra-white-gold-16-inch-zircon-mangalsutra-196013-1211825610.jpg?v=1766082051"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 200,
+    "category": "Tika",
+    "sourceTitle": "Antique Tikka 185149",
+    "source": "https://www.kushals.com/products/antique-tikka-185149",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-tikka-ruby-green-gold-antique-tikka-185149-1170743506.jpg?v=1748625425",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-tikka-antique-tikka-185149-1170743505.jpg?v=1748625423"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 201,
+    "category": "Tika",
+    "sourceTitle": "Antique Tikka 196738",
+    "source": "https://www.kushals.com/products/antique-tikka-196738",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-tikka-ruby-green-gold-antique-tikka-196738-1225077222.jpg?v=1772724072",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-tikka-antique-tikka-196738-1225077221.jpg?v=1772724050"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 202,
+    "category": "Tika",
+    "sourceTitle": "Zircon Tikka 182136",
+    "source": "https://www.kushals.com/products/zircon-tikka-182136",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-tikka-ruby-rodium-gold-zircon-tikka-182136-1218767061.jpg?v=1769792708",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-tikka-zircon-tikka-182136-1218767060.jpg?v=1769792726"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 203,
+    "category": "Tika",
+    "sourceTitle": "Zircon Tikka 191084",
+    "source": "https://www.kushals.com/products/zircon-tikka-191084",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-tikka-white-rodium-gold-zircon-tikka-191084-1265144121.jpg?v=1793273736",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-tikka-zircon-tikka-191084-1265144120.jpg?v=1793273727"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 210,
+    "category": "Nath",
+    "sourceTitle": "Zircon Nath 183376",
+    "source": "https://www.kushals.com/products/zircon-nath-183376",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-nath-green-coral-gold-zircon-nath-183376-1197530085.jpg?v=1760460418",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-nath-green-coral-gold-zircon-nath-183376-1197530084.jpg?v=1760460414"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 211,
+    "category": "Nath",
+    "sourceTitle": "Antique Nath 173518",
+    "source": "https://www.kushals.com/products/antique-nath-173518",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-nath-white-gold-antique-nath-173518-40516368760988.jpg?v=1735257156",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/antique-nath-white-gold-antique-nath-173518-40516368826524.jpg?v=1735257327"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 212,
+    "category": "Nath",
+    "sourceTitle": "Kundan Nath 179893",
+    "source": "https://www.kushals.com/products/kundan-nath-179893",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/kundan-nath-white-victorian-kundan-nath-179893-40520398962844.jpg?v=1735376678",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/kundan-nath-white-victorian-kundan-nath-179893-40520399159452.jpg?v=1735376858"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 213,
+    "category": "Nath",
+    "sourceTitle": "Zircon Nath 206905",
+    "source": "https://www.kushals.com/products/zircon-nath-206905",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-nath-white-gold-zircon-nath-206905-1264173120.jpg?v=1792736968",
+      "https://cdn.shopify.com/s/files/1/0796/1959/files/zircon-nath-white-gold-zircon-nath-206905-1264173119.jpg?v=1792736959"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 220,
+    "category": "Coins",
+    "sourceTitle": "999 Pure Gold Mini Coin",
+    "source": "https://chipleejewellery.com/products/999-pure-gold-1gram-mini-coin",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/999_Pure_Gold_1gram_Mini_Coin.jpg?v=1787219789",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/999_Pure_Gold_1gram_Mini_Coin_2.jpg?v=1787219797"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  },
+  {
+    "id": 221,
+    "category": "Coins",
+    "sourceTitle": "999 Pure Gold 12 Animals Chinese Zodiac Coins Collectable",
+    "source": "https://chipleejewellery.com/products/999-pure-gold-12-animals-chinese-zodiac-coins-collectable",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/999_Pure_Gold_12_Animals_Chinese_Zodiac_Coins_Collectables.png?v=1766057285",
+      "https://cdn.shopify.com/s/files/1/0616/7992/7525/files/999_Pure_Gold_12_Animals_Chinese_Zodiac_Coins_Collectables_2.png?v=1766057226"
+    ],
+    "usage": "Illustrative sample imagery; not a specification or availability claim."
+  }
+]

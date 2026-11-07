@@ -1,0 +1,113 @@
+@layer theme, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@theme inline {
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --color-heading: #26231f;
+  --color-body: #514b44;
+  --color-price: #765a3d;
+  --color-ivory: #fffaf0;
+  --color-brand: var(--teal);
+  --color-accent: var(--copper);
+  --color-muted: var(--muted);
+  --color-cream: var(--cream);
+}
+
+/* Tailwind utilities applied after the legacy component styles. */
+:root .container {
+  width: min(1280px, calc(100% - 48px));
+}
+
+:root .trust-grid {
+  @apply grid grid-cols-1 gap-6 py-8 sm:grid-cols-2 xl:grid-cols-4;
+}
+
+:root .trust-item,
+:root .trust-item:first-child,
+:root .trust-item:last-child {
+  @apply min-w-0 items-start justify-start gap-3 border-0 px-2;
+}
+
+:root .trust-item > svg {
+  @apply mt-1 size-7 shrink-0;
+}
+
+:root .trust-item > span {
+  @apply min-w-0 flex-1;
+}
+
+:root .trust-item strong {
+  @apply block text-sm font-semibold leading-6;
+}
+
+:root .trust-item small {
+  @apply mt-1 block text-xs font-medium leading-5;
+  color: #5e6d63;
+}
+
+:root .product-grid,
+:root .listing-product-grid {
+  @apply gap-x-6 gap-y-10;
+}
+
+:root .product-card,
+:root .product-info {
+  @apply min-w-0;
+}
+
+:root .product-info {
+  @apply pt-4;
+}
+
+:root .product-info .product-details {
+  @apply flex flex-wrap items-start justify-between gap-x-3 gap-y-1 text-xs font-medium leading-5;
+}
+
+:root .product-details > span:first-child {
+  @apply text-xs font-semibold;
+}
+
+:root .product-info h3 {
+  @apply my-3 min-h-0 text-lg font-medium leading-7 sm:text-xl;
+  overflow-wrap: anywhere;
+}
+
+:root .price-row {
+  @apply flex items-center justify-between gap-3;
+}
+
+:root .price-row strong {
+  @apply text-lg font-semibold leading-7;
+}
+
+:root .product-info .product-store {
+  @apply mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 pt-3 text-xs font-medium leading-5;
+  color: #5e6d63;
+}
+
+:root .product-store > a {
+  @apply min-w-0;
+  overflow-wrap: anywhere;
+}
+
+:root .product-info .product-store > span {
+  @apply ml-0;
+}
+
+:root .product-tag,
+:root .purity {
+  @apply text-[11px] font-medium leading-4;
+  max-width: calc(100% - 54px);
+}
+
+:root .product-detail-arrow {
+  @apply flex size-10 shrink-0 items-center justify-center;
+}
+
+@media (max-width: 540px) {
+  :root .container { width: calc(100% - 32px); }
+  :root .product-grid,
+  :root .listing-product-grid { @apply grid-cols-1; }
+}
