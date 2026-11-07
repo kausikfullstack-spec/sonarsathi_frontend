@@ -1,0 +1,35 @@
+@reference '../tailwind.css';
+
+:root .hero-visual-complete {
+  @apply h-auto ml-0 overflow-hidden rounded-2xl;
+  background: #eadcc4;
+  border: 1px solid #e4d7bd;
+}
+.hero-complete-photo { @apply w-full aspect-square; }
+:root .hero-visual-complete .hero-image { @apply block size-full object-contain rounded-none; object-position: center; }
+.hero-complete-caption { @apply flex items-center justify-between gap-5 px-6 py-5 bg-brand text-white; }
+.hero-complete-caption > span { @apply font-display text-[27px] leading-[1.2]; }
+.hero-complete-caption > a { @apply inline-flex items-center gap-2 text-[11px] font-medium text-white; }
+.hero-complete-caption > a:hover { color: #e3c896; }
+.hero-complete-caption > a svg { @apply size-[17px] shrink-0; }
+
+.directory-hero-layout { @apply grid grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] items-center gap-14; }
+.directory-hero-copy { @apply min-w-0; }
+.directory-hero-art { @apply m-0 overflow-hidden rounded-2xl; border: 1px solid #e4d7bd; background: #fafafa; }
+.directory-hero-art img { @apply block w-full aspect-square object-contain; }
+.directory-hero-art figcaption { @apply flex flex-col gap-2 px-5 py-4 bg-brand text-white; }
+.directory-hero-art figcaption > span:first-child { @apply text-[10px] tracking-[1.5px] font-medium; color: #e3c896; }
+.directory-hero-art figcaption > span:last-child { @apply text-xs; }
+.directory-hero-copy .directory-stats { @apply flex-wrap gap-y-3; }
+
+@media (max-width: 900px) {
+  .directory-hero-layout { @apply gap-7; }
+  .directory-hero-copy .directory-stats > span + span { @apply border-0 pl-0; }
+}
+@media (max-width: 640px) {
+  .directory-hero-layout { @apply grid-cols-1 gap-8; }
+  .directory-hero-art { @apply w-full max-w-[440px] mx-auto; }
+  .hero-complete-caption { @apply px-4 py-4 gap-3; }
+  .hero-complete-caption > span { @apply text-[24px]; }
+  .hero-complete-caption > a { @apply text-[10px]; }
+}

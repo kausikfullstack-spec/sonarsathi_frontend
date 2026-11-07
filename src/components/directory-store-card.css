@@ -1,0 +1,59 @@
+@reference '../tailwind.css';
+
+.directory-shop-grid { @apply grid grid-cols-1 gap-7 lg:grid-cols-2; }
+.directory-shop-card { @apply flex flex-col min-w-0 overflow-hidden rounded-2xl; background: #fffdf8; border: 1px solid #e4d7bd; box-shadow: 0 4px 20px #765a3d07; transition: box-shadow .25s, border-color .25s; }
+.directory-shop-card:hover, .directory-shop-card:focus-within { border-color: #b79a6b; box-shadow: 0 12px 36px #765a3d15; }
+.directory-shop-photo { @apply relative block overflow-hidden h-auto; background: #fafafa; }
+.directory-shop-photo > img { @apply block w-full h-[280px] object-cover; object-position: center; }
+.directory-shop-card:hover .directory-shop-photo > img { transform: none; }
+.directory-shop-image-shade { @apply hidden; }
+.directory-shop-demo { @apply absolute top-5 left-5 rounded-full px-3 py-2 text-[10px] font-semibold tracking-wider uppercase; background: #fffaf0ed; color: #174c43; }
+.directory-shop-design-count { @apply absolute top-5 right-5 inline-flex items-center gap-2 rounded-full px-3 py-2 text-[11px] font-medium text-white; background: #174c43db; }
+.directory-shop-design-count svg { @apply size-[14px]; }
+.directory-shop-photo-caption { @apply block px-6 pt-5 pb-8 bg-brand text-white font-display text-[30px] font-medium leading-8; }
+.directory-shop-photo-caption > span { @apply block mt-2 text-[11px] font-body font-normal tracking-wide; color: #f4deb3; }
+.directory-shop-nearest { @apply absolute top-[230px] right-5 inline-flex items-center gap-2 rounded-full px-3 py-2 text-[10px] text-brand font-semibold; background: #f4deb3; }
+.directory-shop-body { @apply px-7 pb-7 flex flex-col flex-1 min-w-0; }
+.directory-shop-identity { @apply relative flex items-end justify-between gap-4 mb-5; }
+.directory-shop-monogram { @apply inline-flex items-center justify-center size-[66px] rounded-xl -mt-5 shrink-0 font-display text-[28px] font-semibold text-brand; background: #fff5dc; border: 2px solid #b79a6b; box-shadow: 0 0 0 4px #fffdf8, 0 5px 12px #765a3d14; }
+.directory-shop-area { @apply inline-flex items-center gap-1.5 text-[11px] text-accent font-medium pb-1 text-right; }
+.directory-shop-area svg { @apply shrink-0 size-[14px]; }
+:root .directory-shop-card h2 { @apply text-[32px] leading-[1.15] tracking-[-.5px] text-brand m-0; }
+.directory-shop-card h2 a:hover { @apply text-accent; }
+.directory-shop-card .store-rating-summary { @apply mt-3 mb-4; }
+:root body main .directory-shop-card .directory-shop-description { @apply text-sm leading-7 m-0; }
+.directory-shop-categories { @apply flex items-center flex-wrap gap-2 mt-5 mb-6; }
+.directory-shop-categories a { @apply text-[11px] leading-5 rounded-full py-1.5 px-3 text-brand font-medium; background: #f4f0e6; border: 1px solid #e7dfce; }
+.directory-shop-categories a:hover { @apply bg-brand text-white; }
+.directory-shop-categories .directory-shop-more { @apply bg-transparent text-accent; border-color: transparent; }
+.directory-shop-location { @apply flex items-start gap-3 pt-5 mt-auto; border-top: 1px solid #e9dfcc; }
+.directory-shop-location > svg { @apply shrink-0 size-[18px] text-accent mt-1; }
+.directory-shop-location > div { @apply min-w-0; }
+.directory-shop-location > div > span { @apply text-[9px] tracking-[1.5px] font-semibold text-accent; }
+:root body main .directory-shop-card .directory-shop-location p { @apply text-xs leading-6 mt-1 mb-0; }
+.directory-shop-distance { @apply flex items-start gap-2 text-[11px] leading-5 text-body mt-4 mb-5; }
+.directory-shop-distance > svg { @apply size-[14px] mt-0.5 shrink-0 text-accent; }
+.directory-shop-distance button { @apply bg-transparent p-0 text-left text-brand underline font-medium; text-underline-offset: 3px; }
+.directory-shop-distance button:disabled { @apply no-underline text-body; }
+.directory-shop-distance strong { @apply font-semibold text-brand; }
+.directory-shop-actions { @apply grid grid-cols-[minmax(0,1fr)_auto] gap-3; }
+.directory-shop-actions .button { @apply justify-between py-3.5 px-5 text-xs rounded-lg min-h-12; }
+.directory-shop-directions { @apply inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-xs font-semibold text-brand; border: 1px solid #d7c7aa; background: #fffaf0; }
+.directory-shop-directions:hover { @apply bg-cream; }
+.directory-shop-directions svg { @apply size-4; }
+.directory-content .directory-toolbar { @apply rounded-xl p-5; border: 1px solid #e4d7bd; background: #fffdf8; }
+.directory-content .directory-results { @apply my-7; }
+@media (max-width: 540px) {
+  .directory-shop-body { @apply px-5 pb-5; }
+  .directory-shop-photo > img { @apply h-[240px]; }
+  .directory-shop-photo-caption { @apply px-5 text-[28px]; }
+  .directory-shop-nearest { @apply top-[190px] right-5; }
+  :root .directory-shop-card h2 { @apply text-[29px]; }
+  .directory-shop-monogram { @apply size-14 text-[24px]; }
+  .directory-shop-actions { @apply gap-2; }
+  .directory-shop-actions .button { @apply px-4 gap-2 text-[11px]; }
+  .directory-shop-directions { @apply px-3 text-[11px]; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .directory-shop-card, .directory-shop-photo > img { transition: none; }
+}

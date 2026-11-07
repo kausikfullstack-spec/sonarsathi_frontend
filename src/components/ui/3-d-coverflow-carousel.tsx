@@ -2,7 +2,7 @@ import HeadingShine from './HeadingShine'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
-import { FiArrowUpRight, FiChevronLeft, FiChevronRight, FiPause, FiPlay } from 'react-icons/fi'
+import { FiArrowUpRight, FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import './3-d-coverflow-carousel.css'
 
 export interface CarouselItem {
@@ -28,14 +28,13 @@ export function CoverFlowCarousel({ items, sectionLabel = 'THE SONASATHI EDIT', 
   const [currentIndex, setCurrentIndex] = useState(0)
   const [hovered, setHovered] = useState(false)
   const [focused, setFocused] = useState(false)
-  const [paused, setPaused] = useState(false)
   const [visible, setVisible] = useState(false)
   const [reducedMotion, setReducedMotion] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches)
   const section = useRef<HTMLElement>(null)
   const touchStart = useRef<number | null>(null)
   const total = items.length
   const index = total ? currentIndex % total : 0
-  const rotating = autoplay && !paused && !hovered && !focused && !reducedMotion && visible && total > 1
+  const rotating = autoplay && !hovered && !focused && !reducedMotion && visible && total > 1
   const next = useCallback(() => { if (total > 1) setCurrentIndex(previous => (previous + 1) % total) }, [total])
   const previous = useCallback(() => { if (total > 1) setCurrentIndex(value => (value - 1 + total) % total) }, [total])
 
@@ -100,7 +99,7 @@ export function CoverFlowCarousel({ items, sectionLabel = 'THE SONASATHI EDIT', 
         <button className="coverflow-arrow" onClick={previous} aria-label="Previous jewellery design"><FiChevronLeft /></button>
         <div className="coverflow-dots" aria-label="Choose featured design">{items.map((item, dot) => <button key={dot} onClick={() => setCurrentIndex(dot)} aria-label={`Show ${item.titleLine1}`} aria-current={index === dot ? 'true' : undefined}><span /></button>)}</div>
         <button className="coverflow-arrow" onClick={next} aria-label="Next jewellery design"><FiChevronRight /></button>
-        {autoplay && !reducedMotion && <button className="coverflow-arrow coverflow-pause" onClick={() => setPaused(!paused)} aria-label={paused ? 'Play carousel' : 'Pause carousel'}>{paused ? <FiPlay /> : <FiPause />}</button>}
+       
       </div>}
       <span className="sr-only" aria-live={rotating ? 'off' : 'polite'} aria-atomic="true">{items[index].titleLine1}, design {index + 1} of {total}</span>
     </div>
