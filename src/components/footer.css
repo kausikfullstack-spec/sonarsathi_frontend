@@ -1,0 +1,64 @@
+@reference '../tailwind.css';
+
+.site-footer { background: #f4efe5; border-top: 1px solid #dfd2b8; }
+.footer-brand-band { @apply bg-brand; }
+.footer-brand-row { @apply flex items-center justify-between gap-10 py-9; }
+.site-footer .brand--logo { @apply block w-[240px] max-w-full shrink-0 overflow-hidden; aspect-ratio: 2172 / 570; }
+.site-footer .brand--logo img { @apply block w-full h-auto; mix-blend-mode: screen; }
+.footer-brand-row > div { @apply pl-10; border-left: 1px solid #e3c89640; }
+.footer-brand-row > div > span { @apply text-[9px] tracking-[2px] font-medium; color: #e3c896; }
+:root body footer.site-footer .footer-brand-row p { @apply mt-3 mb-0 font-display font-medium text-[30px] text-white leading-[1.15]; }
+.footer-brand-row p em { color: #e3c896; }
+.footer-discover { @apply inline-flex items-center justify-center gap-5 text-xs font-semibold rounded-lg px-5 py-4 min-h-12 text-brand; background: #e3c896; }
+.footer-discover:hover { background: #f4deb3; }
+.footer-discover svg { @apply size-[18px]; }
+.footer-link-grid { @apply grid grid-cols-[1.05fr_1fr_1.1fr_1.15fr_1.1fr] gap-10 pt-14 pb-12; }
+:root .site-footer .footer-link-grid h3 { @apply font-body text-brand text-[16px] font-semibold leading-6 mt-0 mb-6; }
+.footer-link-grid > nav > a { @apply block text-[14px] leading-6 mb-3; color: #514b44; }
+.footer-link-grid > nav > a:hover { @apply text-brand underline; text-underline-offset: 4px; }
+:root body footer.site-footer .footer-link-grid p { @apply text-[14px] leading-7 font-normal text-body m-0; }
+.footer-bis { @apply inline-flex flex-col items-start gap-2 text-accent mb-4; }
+.footer-bis .footer-bis-logo { @apply block w-[110px] h-auto object-contain; }
+.footer-bis > svg { @apply size-9; stroke-width: 1.3; }
+.footer-bis > span { @apply inline-flex items-center gap-2 font-medium text-[14px]; }
+.footer-bis > span > svg { @apply size-[14px]; }
+.footer-bis:hover { @apply text-brand; }
+.footer-link-grid > nav.footer-visit > a { @apply flex items-start gap-2.5; }
+.footer-visit > a > svg { @apply size-[17px] shrink-0 mt-1 text-accent; }
+:root body footer.site-footer .footer-visit p { @apply mt-5 italic; }
+.footer-share-buttons { @apply flex items-center gap-3 mt-5 mb-3; }
+.footer-share-buttons button { @apply flex items-center justify-center size-11 rounded-full text-brand text-[18px]; border: 1px solid #cbb892; background: #fffaf0; }
+.footer-share-buttons button:hover { @apply bg-brand text-white; }
+.footer-share-message { @apply block text-[11px] leading-5 text-brand; }
+.footer-copy-input { @apply w-full min-w-0 mt-3 p-2 text-[11px] text-brand; border: 1px solid #cbb892; background: #fffaf0; }
+.footer-finish { @apply flex items-center justify-between gap-5 py-6 text-xs leading-6 text-body; border-top: 1px solid #dfd2b8; }
+.footer-finish > button { @apply inline-flex items-center gap-2 bg-transparent p-0 text-brand font-medium min-h-11; }
+.footer-finish > button:hover { @apply underline; text-underline-offset: 4px; }
+.footer-finish > button svg { @apply size-4; }
+@media (max-width: 1100px) {
+  .footer-link-grid { @apply grid-cols-3 gap-x-8 gap-y-10; }
+  .footer-brand-row { @apply gap-6; }
+  .site-footer .brand--logo { @apply w-[210px]; }
+  .footer-brand-row > div { @apply pl-6; }
+  .footer-discover { @apply px-4 gap-3; }
+}
+@media (max-width: 750px) {
+  .footer-brand-row { @apply flex-wrap py-8; }
+  .footer-brand-row > div { @apply flex-1 min-w-[170px]; }
+  .footer-discover { @apply w-full; }
+  .footer-link-grid { @apply grid-cols-2 gap-x-6 pt-10 pb-8; }
+  .footer-hallmark { @apply col-span-full; }
+  .footer-hallmark p { max-width: 42ch; }
+  .footer-finish { @apply flex-wrap gap-x-5 gap-y-1 py-5; }
+  .footer-finish > span:first-child { @apply w-full; }
+  .footer-finish > button { @apply ml-auto; }
+}
+@media (max-width: 440px) {
+  .footer-brand-row { @apply flex-col items-start gap-5; }
+  .site-footer .brand--logo { @apply w-[220px]; }
+  .footer-brand-row > div { @apply pl-0 border-0; }
+  :root body footer.site-footer .footer-brand-row p { @apply text-[28px]; }
+  .footer-link-grid { @apply gap-x-5; }
+  :root .site-footer .footer-link-grid h3 { @apply text-[14px] mb-4; }
+  .footer-link-grid > nav > a { @apply text-[13px]; }
+}

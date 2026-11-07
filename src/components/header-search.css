@@ -1,0 +1,33 @@
+@reference '../tailwind.css';
+
+:root .search-strip .search-inner { @apply h-auto min-h-[78px] py-3 gap-6; }
+:root .search-strip .search-inner > span { @apply text-[9px] leading-5 tracking-[1.2px]; }
+:root .search-inner .header-search {
+  @apply flex items-center min-w-0 w-full max-w-[640px] gap-3 rounded-xl p-1.5 pl-4;
+  background: #fffdf8;
+  border: 1px solid #d6c4a3;
+  box-shadow: 0 2px 8px #765a3d08;
+  transition: border-color .2s, box-shadow .2s;
+}
+:root .search-inner .header-search:focus-within { border-color: #174c43; box-shadow: 0 0 0 3px #174c4320; }
+:root .search-inner .header-search > svg { @apply size-[18px] shrink-0 text-accent; }
+:root .search-inner .header-search input { @apply flex-1 min-w-0 min-h-11 text-[13px] font-medium text-brand bg-transparent py-2; }
+:root .header-search input::placeholder { @apply text-body font-normal; opacity: .8; }
+:root .header-search input:focus-visible { outline: none; }
+.header-search input::-webkit-search-cancel-button { appearance: none; }
+:root .search-inner .header-search .header-search-submit { @apply inline-flex items-center justify-center gap-3 rounded-lg bg-brand text-white px-4 py-3 min-h-11 shrink-0 text-xs font-semibold; }
+:root .header-search .header-search-submit:hover { background: #103e36; }
+:root .header-search .header-search-submit > svg { @apply size-[18px]; color: #e3c896; }
+:root .search-inner .header-search .header-search-clear { @apply inline-flex items-center justify-center size-11 shrink-0 p-0 rounded-lg bg-transparent text-body text-[18px]; }
+:root .header-search .header-search-clear:hover { background: #f4efe5; }
+@media (max-width: 800px) {
+  :root .search-strip .search-inner { @apply py-3 min-h-0; }
+  :root .search-inner .header-search { @apply max-w-none; }
+}
+@media (max-width: 480px) {
+  :root .search-inner .header-search { @apply gap-2 pl-3; }
+  :root .search-inner .header-search input { @apply text-xs; }
+  :root .header-search-submit > span { @apply hidden; }
+  :root .search-inner .header-search .header-search-submit { @apply w-11 px-0; }
+  :root .search-inner .header-search .header-search-clear { @apply w-8; }
+}
