@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { Product } from '../data/catalogue'
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [city, setCity] = useState('Kolkata')
+  const [city, setCity] = useState(() => { try { return localStorage.getItem('sonasathi-city') || 'Kolkata' } catch { return 'Kolkata' } })
   const [category, setCategory] = useState('All jewellery')
   const [search, setSearch] = useState('')
   const [savedOnly, setSavedOnly] = useState(false)
