@@ -1,3 +1,4 @@
+import FeaturedBadge from './FeaturedBadge'
 import { Link } from 'react-router-dom'
 import { FiArrowUpRight, FiMapPin, FiNavigation } from 'react-icons/fi'
 import type { Store } from '../data/stores'
@@ -17,6 +18,7 @@ export default function HomeJewellerCard({ store, distance }: { store: Store; di
     </Link>
     <div className="home-jeweller-body">
       <div className="home-jeweller-identity"><span className="home-jeweller-logo" aria-hidden="true">{store.initials}</span><span><FiMapPin aria-hidden="true" />{store.area}, {store.city}</span></div>
+      {store.featured && <FeaturedBadge />}
       <div className="home-jeweller-specialty">{store.specialty}</div>
       <h3><Link to={`/shop/${store.slug}`}>{store.name}</Link></h3>
       <StoreRating slug={store.slug} />

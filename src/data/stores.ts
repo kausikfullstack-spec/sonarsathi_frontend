@@ -1,9 +1,11 @@
 import { products } from './catalogue'
 import { storeProfiles } from './store-profiles'
 
+const featuredSlugs = new Set(['bowbazar-gold-house', 'bardhaman-curzon-jewels', 'bankura-heritage-gold'])
+
 export const stores = storeProfiles.map(store => {
   const collection = products.filter(product => product.storeSlug === store.slug)
-  return { ...store, productIds: collection.map(product => product.id), categories: [...new Set(collection.map(product => product.category))], image: collection[0]?.image ?? products[0].image }
+  return { ...store, featured: featuredSlugs.has(store.slug), productIds: collection.map(product => product.id), categories: [...new Set(collection.map(product => product.category))], image: collection[0]?.image ?? products[0].image }
 })
 export type Store = typeof stores[number]
 export type Coordinates = { lat: number; lng: number }

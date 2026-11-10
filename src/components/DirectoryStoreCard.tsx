@@ -1,3 +1,4 @@
+import FeaturedBadge from './FeaturedBadge'
 import { Link } from 'react-router-dom'
 import { FiArrowUpRight, FiGrid, FiMapPin, FiNavigation } from 'react-icons/fi'
 import type { Store } from '../data/stores'
@@ -20,6 +21,7 @@ export default function DirectoryStoreCard({ store, distance, nearest = false }:
     </Link>
     <div className="directory-shop-body">
       <div className="directory-shop-identity"><span className="directory-shop-monogram" aria-hidden="true">{store.initials}</span><span className="directory-shop-area"><FiMapPin aria-hidden="true" />{store.area}, {store.city}</span></div>
+      {store.featured && <FeaturedBadge />}
       <h2><Link to={`/shop/${store.slug}`}>{store.name}</Link></h2>
       <StoreRating slug={store.slug} />
       <p className="directory-shop-description">{store.description}</p>

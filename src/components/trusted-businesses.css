@@ -29,8 +29,18 @@
 
 .trusted-businesses-banner img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1916 / 821;
+  object-fit: contain;
 }
+
+.trusted-banner-controls { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 14px; }
+.trusted-banner-controls > button { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid #d9c6a2; border-radius: 50%; background: #fff9ed; color: #174c43; }
+.trusted-banner-controls > button:hover { background: #f2e4c9; }
+.trusted-banner-dots { display: flex; align-items: center; gap: 2px; }
+.trusted-banner-dots button { display: grid; place-items: center; width: 28px; height: 36px; padding: 0; background: transparent; }
+.trusted-banner-dots span { width: 8px; height: 8px; border-radius: 50%; background: #d4c8b1; }
+.trusted-banner-dots .active span { width: 22px; border-radius: 8px; background: #174c43; }
+.trusted-banner-count { font-size: 11px; color: #69776a; }
 
 @media (max-width: 640px) {
   .trusted-businesses {

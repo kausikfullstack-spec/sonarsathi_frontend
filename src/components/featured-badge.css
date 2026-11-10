@@ -1,0 +1,24 @@
+.jeweller-featured-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  border: 1px solid #8f641d;
+  border-radius: 999px;
+  background: #f2d48a;
+  color: #4b330c;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .5px;
+}
+.jeweller-featured-text {
+  text-shadow: 0 0 5px #fff4c9, 0 0 10px #e8af39, 0 0 16px #e8af3980;
+}
+.jeweller-featured-badge svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
