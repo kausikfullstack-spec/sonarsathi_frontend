@@ -140,6 +140,22 @@
 .jewellery-store-panel>p>svg {
   @apply mt-[4px] text-accent;
 }
+.jewellery-store-panel>.jewellery-store-phone {
+  @apply mt-2;
+}
+.jewellery-store-phone>svg {
+  @apply shrink-0;
+}
+.jewellery-store-phone>a {
+  @apply text-brand underline underline-offset-4;
+}
+.jewellery-store-phone>a:hover {
+  @apply text-accent;
+}
+.jewellery-store-phone>a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
 .jewellery-store-panel>.detail-distance {
   @apply text-[10px] mt-[13px];
 }

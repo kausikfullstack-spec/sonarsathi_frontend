@@ -1,7 +1,24 @@
 // Fictional store identities. New regional addresses and pins represent approximate neighbourhood locations.
-export const storeProfiles = [
+type StoreProfile = {
+  slug: string
+  name: string
+  area: string
+  address: string
+  phone?: string
+  phoneIsDemo?: boolean
+  lat: number
+  lng: number
+  initials: string
+  specialty: string
+  description: string
+  city: string
+}
+
+export const storeProfiles: StoreProfile[] = [
   {
     "slug": "bowbazar-gold-house",
+    "phone": "+91 00000 00001",
+    "phoneIsDemo": true,
     "name": "Bowbazar Gold House",
     "area": "Bowbazar",
     "address": "166, Bepin Behari Ganguly St, Baithakkhana, Chandni Chawk, Bowbazar, Kolkata, West Bengal 700014",
@@ -14,6 +31,8 @@ export const storeProfiles = [
   },
   {
     "slug": "bhowanipore-jewel-studio",
+    "phone": "+91 00000 00002",
+    "phoneIsDemo": true,
     "name": "Bhowanipore Jewel Studio",
     "area": "Bhowanipore",
     "address": "3, Ashutosh Mukherjee Rd, Gaza Park, Sreepally, Bhowanipore, Kolkata, West Bengal 700020",
@@ -26,6 +45,8 @@ export const storeProfiles = [
   },
   {
     "slug": "salt-lake-gold-gallery",
+    "phone": "+91 00000 00003",
+    "phoneIsDemo": true,
     "name": "Salt Lake Gold Gallery",
     "area": "Salt Lake",
     "address": "BUS STOP, BA 54 SECTOR 1, behind Hariyana Vidya Mandir, BIDHAN NAGAR, Bidhannagar, Kolkata, West Bengal 700064",
@@ -38,6 +59,8 @@ export const storeProfiles = [
   },
   {
     "slug": "diamond-plaza-jewels",
+    "phone": "+91 00000 00004",
+    "phoneIsDemo": true,
     "name": "Diamond Plaza Jewels",
     "area": "Jessore Road",
     "address": "4th Floor, DIAMOND PLAZA MALL, 68, Jessore Rd, Kolkata, West Bengal 700055",
@@ -50,6 +73,8 @@ export const storeProfiles = [
   },
   {
     "slug": "baguiati-heritage-jewellers",
+    "phone": "+91 00000 00005",
+    "phoneIsDemo": true,
     "name": "Baguiati Heritage Jewellers",
     "area": "Baguiati",
     "address": "DC 1/12 Shastribagan, VIP Rd, opposite to Apex Nursing Home, beside To VIP Sweets, Desh Bandhu Nagar, Kolkata, West Bengal 700059",
@@ -62,6 +87,8 @@ export const storeProfiles = [
   },
   {
     "slug": "bardhaman-curzon-jewels",
+    "phone": "+91 00000 00006",
+    "phoneIsDemo": true,
     "name": "Bardhaman Curzon Jewels",
     "city": "Bardhaman",
     "area": "Curzon Gate",
@@ -74,6 +101,8 @@ export const storeProfiles = [
   },
   {
     "slug": "golapbag-gold-studio",
+    "phone": "+91 00000 00007",
+    "phoneIsDemo": true,
     "name": "Golapbag Gold Studio",
     "city": "Bardhaman",
     "area": "Golapbag",
@@ -86,6 +115,8 @@ export const storeProfiles = [
   },
   {
     "slug": "bankura-heritage-gold",
+    "phone": "+91 00000 00008",
+    "phoneIsDemo": true,
     "name": "Bankura Heritage Gold",
     "city": "Bankura",
     "area": "Machantala",
@@ -98,6 +129,8 @@ export const storeProfiles = [
   },
   {
     "slug": "lalbazar-jewel-house",
+    "phone": "+91 00000 00009",
+    "phoneIsDemo": true,
     "name": "Lalbazar Jewel House",
     "city": "Bankura",
     "area": "Lalbazar",
@@ -110,6 +143,8 @@ export const storeProfiles = [
   },
   {
     "slug": "medinipur-gold-gallery",
+    "phone": "+91 00000 00010",
+    "phoneIsDemo": true,
     "name": "Medinipur Gold Gallery",
     "city": "Medinipur",
     "area": "Kotwali",
@@ -122,6 +157,8 @@ export const storeProfiles = [
   },
   {
     "slug": "keranitola-jewel-studio",
+    "phone": "+91 00000 00011",
+    "phoneIsDemo": true,
     "name": "Keranitola Jewel Studio",
     "city": "Medinipur",
     "area": "Keranitola",
@@ -134,6 +171,8 @@ export const storeProfiles = [
   },
   {
     "slug": "park-street-jewel-lounge",
+    "phone": "+91 00000 00012",
+    "phoneIsDemo": true,
     "name": "Park Street Jewel Lounge",
     "city": "Kolkata",
     "area": "Park Street",
