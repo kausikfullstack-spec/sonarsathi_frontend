@@ -2,14 +2,14 @@ import { storeProfiles } from './store-profiles'
 import { jewelleryCategories } from './categories'
 import { productImages } from './product-images'
 export const categories = ['All jewellery', ...jewelleryCategories.map(category => category.name)]
-export type Product = { id: number; name: string; category: string; price: number; weight: string; purity: string; store: string; image: string; alternateImage?: string; city?: string; tag: string; storeSlug?: string; metal?: string }
+export type Product = { id: number; name: string; category: string; price: number; weight: string; purity: string; store: string; image: string; alternateImage?: string; city?: string; tag: string; storeSlug?: string; metal?: string; stoneCharges?: number }
 const originalProducts: Product[] = [
   { id: 1, name: 'The Everyday Gold Necklace', category: 'Necklaces', price: 42850, weight: '5.24', purity: '22K', store: 'Mehta & Sons Jewellers', image: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=85', tag: 'Bestseller' },
-  { id: 2, name: 'Petal Diamond Studs', category: 'Earrings', price: 28600, weight: '2.86', purity: '18K', store: 'Kalyan Jewellers', image: '/earrings.jpg', tag: 'New arrival' },
-  { id: 3, name: 'The Eternal Solitaire', category: 'Rings', price: 35200, weight: '3.12', purity: '18K', store: 'Mehta & Sons Jewellers', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=85', tag: 'Most loved' },
+  { id: 2, name: 'Petal Diamond Studs', category: 'Earrings', price: 28600, stoneCharges: 4800, weight: '2.86', purity: '18K', store: 'Kalyan Jewellers', image: '/earrings.jpg', tag: 'New arrival' },
+  { id: 3, name: 'The Eternal Solitaire', category: 'Rings', price: 35200, stoneCharges: 7200, weight: '3.12', purity: '18K', store: 'Mehta & Sons Jewellers', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=85', tag: 'Most loved' },
   { id: 4, name: 'Classic Gold Bangle', category: 'Bangles', price: 68400, weight: '8.42', purity: '22K', store: 'Senco Gold & Diamonds', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=85', tag: 'Timeless' },
   { id: 5, name: 'Golden Link Bracelet', category: 'Bracelets', price: 31900, weight: '3.91', purity: '22K', store: 'Kalyan Jewellers', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=85', tag: 'New arrival' },
-  { id: 6, name: 'Little Moments Pendant', category: 'Pendants', price: 18500, weight: '2.18', purity: '18K', store: 'Senco Gold & Diamonds', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85', tag: 'Everyday favourite' },
+  { id: 6, name: 'Little Moments Pendant', category: 'Pendants', price: 18500, stoneCharges: 1500, weight: '2.18', purity: '18K', store: 'Senco Gold & Diamonds', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85', tag: 'Everyday favourite' },
 ]
 const demoStores = storeProfiles
 const originals = originalProducts.map((product, index) => ({ ...product, store: demoStores[index % 5].name, storeSlug: demoStores[index % 5].slug, metal: 'Gold' }))

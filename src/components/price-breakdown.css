@@ -1,0 +1,26 @@
+@reference '../tailwind.css';
+
+.jewellery-information { @apply min-w-0; }
+.price-breakdown { @apply my-6 min-w-0 overflow-hidden rounded-xl bg-ivory text-brand; border: 1px solid var(--border); box-shadow: 0 2px 8px #174c4308; }
+.price-breakdown-heading { @apply px-4 py-4; }
+:root .price-breakdown .price-breakdown-heading h2 { @apply m-0 font-body text-sm font-semibold tracking-normal; }
+.price-breakdown-scroll { @apply max-w-full overflow-x-auto; scrollbar-width: thin; }
+.price-breakdown-scroll:focus-visible { outline: 2px solid #b79a6b; outline-offset: -2px; }
+.price-breakdown table { @apply w-full text-left text-[11px] leading-5; min-width: 570px; border-collapse: collapse; }
+.price-breakdown-caption { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); }
+.price-breakdown th,.price-breakdown td { @apply px-3 py-3 align-top; border-bottom: 1px solid var(--border); }
+.price-breakdown thead th { @apply text-[9px] uppercase tracking-wide text-muted font-semibold bg-cream; }
+.price-breakdown tbody th { @apply font-medium; }
+.price-breakdown tbody td { @apply text-muted; }
+.price-breakdown th:first-child { width: 30%; }
+.price-breakdown td:last-child,.price-breakdown th:last-child { @apply text-right whitespace-nowrap; }
+.price-breakdown tbody td:last-child { @apply text-brand; }
+.price-breakdown small { @apply block text-[9px] leading-4 font-normal text-muted; }
+.price-breakdown-subtotal { @apply bg-cream font-semibold; }
+.price-breakdown tfoot { @apply bg-cream font-semibold; }
+.price-breakdown tfoot td { @apply text-sm; }
+.price-breakdown-footer { @apply grid grid-cols-3 gap-3 px-4 py-3 text-[10px] leading-5; }
+.price-breakdown-footer strong { @apply block font-medium; }
+@media (max-width: 540px) {
+  .price-breakdown-footer { @apply grid-cols-2; }
+}
