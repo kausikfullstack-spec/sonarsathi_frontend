@@ -1,0 +1,17 @@
+@reference '../tailwind.css';
+
+.language-selector { @apply relative flex items-center gap-2 shrink-0; }
+.language-selector > svg { @apply size-4 shrink-0 text-accent; }
+.language-status,.language-attribution { @apply text-[9px]; }
+.language-error { @apply absolute right-0 top-full mt-2 w-64 p-3 rounded-lg bg-ivory text-brand text-xs text-left z-50 shadow-lg; }
+.language-error button { @apply underline text-brand; }
+
+:root .announcement { @apply grid grid-cols-[1fr_auto_1fr] items-center gap-4 py-1.5; }
+.announcement-copy { @apply col-start-2; }
+.announcement .language-selector { @apply justify-self-end; }
+:root .announcement .sona-select--header .sona-select-trigger { @apply min-h-8 py-1; }
+
+@media (max-width: 800px) {
+  :root .announcement { @apply flex justify-between gap-3 px-4; }
+  .announcement-copy { @apply text-left; }
+}

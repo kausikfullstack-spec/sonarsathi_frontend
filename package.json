@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "translate:server": "node --env-file-if-exists=.env.translation server/translation.mjs",
+    "test:translation": "node --test server/translation.test.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

@@ -21,11 +21,11 @@
 :root .sona-select-menu .sona-select-option[aria-selected='true'] { background: #174c43; color: #fff; }
 :root .sona-select-menu .sona-select-option[aria-selected='true'] > svg { color: #e3c896; }
 :root .sona-select-menu .sona-select-option[aria-disabled='true'] { opacity: .45; cursor: not-allowed; background: transparent; }
-:root .header .sona-select--header { width: auto; min-width: 102px; max-width: 150px; }
-:root .header .sona-select--header .sona-select-trigger { @apply text-white min-h-11 py-2 px-2 text-[11px]; border-color: #e3c89650; background: #ffffff08; }
-:root .header .sona-select--header .sona-select-trigger > svg { color: #e3c896; }
-:root .header .sona-select--header .sona-select-trigger:hover,
-:root .header .sona-select--header .sona-select-trigger[aria-expanded='true'] { background: #ffffff12; border-color: #e3c896; }
+:root :is(.header, .announcement) .sona-select--header { width: auto; min-width: 102px; max-width: 150px; }
+:root :is(.header, .announcement) .sona-select--header .sona-select-trigger { @apply text-white min-h-11 py-2 px-2 text-[11px]; border-color: #e3c89650; background: #ffffff08; }
+:root :is(.header, .announcement) .sona-select--header .sona-select-trigger > svg { color: #e3c896; }
+:root :is(.header, .announcement) .sona-select--header .sona-select-trigger:hover,
+:root :is(.header, .announcement) .sona-select--header .sona-select-trigger[aria-expanded='true'] { background: #ffffff12; border-color: #e3c896; }
 :root .shop-results-toolbar .sona-select { @apply min-w-[145px] max-w-[180px]; }
 :root .listing-sort .sona-select { @apply min-w-[150px] max-w-[190px]; }
 :root .booking-modal .sona-select-menu { z-index: 1100; }
@@ -36,8 +36,8 @@
 :root .category-navigation .category-dropdown a > svg { @apply text-accent; }
 :root .category-navigation .category-dropdown a.active > svg { color: #e3c896; }
 @media (max-width: 800px) {
-  :root .header .sona-select--header { min-width: 88px; max-width: 118px; }
-  :root .header .sona-select--header .sona-select-trigger { @apply text-[10px] px-1.5 gap-1.5; }
+  :root :is(.header, .announcement) .sona-select--header { min-width: 88px; max-width: 118px; }
+  :root :is(.header, .announcement) .sona-select--header .sona-select-trigger { @apply text-[10px] px-1.5 gap-1.5; }
 }
 @media (max-width: 540px) {
   :root .shop-results-toolbar .sona-select { @apply min-w-[125px] max-w-[160px]; }

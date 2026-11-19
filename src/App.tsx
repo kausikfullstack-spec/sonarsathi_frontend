@@ -16,6 +16,7 @@ import { Journey, Jewellers, Faq, Footer } from './components/Sections'
 import { AppProvider } from './context/ShopContext'
 import { BrowserRouter, Link, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { startTranslation } from './lib/translation'
 import LocationProvider from './context/LocationProvider'
 import ExploreShops from './pages/ExploreShops'
 import StoreDetail from './pages/StoreDetail'
@@ -27,6 +28,7 @@ import './App.css'
 import './shops.css'
 import './products.css'
 function RouteEffects() {
+  useEffect(startTranslation, [])
   const { pathname, hash } = useLocation()
   useEffect(() => {
     const titles: Record<string, string> = { '/offers': 'Offers | SonaSathi', '/become-a-seller': 'Become a seller | SonaSathi', '/account': 'Login | SonaSathi', '/login': 'Login | SonaSathi', '/register': 'Register | SonaSathi', '/cart': 'Your cart | SonaSathi', '/': 'SonaSathi | A connection you can trust', '/explore-shops': 'Explore West Bengal Jewellers | SonaSathi' }

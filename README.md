@@ -6,6 +6,25 @@ React, TypeScript, Vite, React Router, Context API, and React Icons.
 
 Run `npm install` and `npm run dev`. Use `npm run build` and `npm run lint` for validation.
 
+## Website translation
+
+The announcement bar's English, Bengali, and Hindi selector uses Google Cloud
+Translation through `POST /api/translate`. Enable Cloud Translation API in your
+Google Cloud project and configure billing. Copy `.env.translation.example` to
+`.env.translation` and set `GOOGLE_TRANSLATE_API_KEY`, then run
+`npm run translate:server` in a separate terminal. Requires Node.js 22+.
+Keep this key on the server; never add
+it to a `VITE_` variable. Restrict it to the Cloud Translation API and configure
+usage quotas in Google Cloud.
+
+The translation service runs on port 4000 during development; Vite proxies the
+endpoint there. In production, route `/api/translate` to this service on the same
+origin as the frontend. The selector remembers the chosen language and translates
+new page content after navigation. English restores the original text. User-entered
+input values are not translated. If Google or the backend is unavailable, a retry
+message appears. The old Google Website Translator widget is not used. Run
+`npm run test:translation` to verify the service with mocked Google responses.
+
 ## Pages
 
 - `/` - homepage and design catalogue.
